@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Title for the page -->
-    <title>Document</title>
+    <title>Football</title>
 
     <!-- Link to my style sheet -->
     <link rel="stylesheet" href="index2.css">
@@ -28,11 +28,11 @@
         <h1>Premier Leauge Football Data</h1>
         
         <h3>Does the home advantage really exist?</h3>
-        <p>A chart illustrating the accumulation of home and away goals across the 2021/22 premeir leauge season</p>
+        <p>A chart illustrating the accumulation of home and away goals across the 2021/22 Premeir Leauge season.</p>
         <div class="chart" id="Chart1"></div>
 
-        <h3>Home Goals</h3>
-        <p>A set of charts depicting the amount of home goals scored by the top 6 sides in the premier leauge in the 2020/21 season</p>
+        <h3>Home Goals - Top 6</h3>
+        <p>A set of charts depicting the amount of home goals scored by the top 6 sides in the Premier Leauge in the 2020/21 season.</p>
         <div class="chart" id="Chart2"> </div>
     </div> 
 </body>
