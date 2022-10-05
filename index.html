@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title for the page -->
+    <title>Data Science</title>
+
+    <!-- Link to my style sheet -->
+    <link rel="stylesheet" href="index2.css">
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+</head>
+
+
+
+<body>
+    <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
+   
+    <div class="myWeek1">
+        <h1>Premier Leauge Football Data - Week 1</h1>
+        
+        <h3>Does the home advantage really exist?</h3>
+        <p>A chart illustrating the accumulation of home and away goals across the 2021/22 Premeir Leauge season</p>
+        <div class="chart" id="chart1"></div>
+
+        <h3>Home Goals - Top 6</h3>
+        <p>A set of charts depicting the amount of home goals scored by the top 6 sides in the Premier Leauge in the 2020/21 season</p>
+        <div class="chart" id="chart2"> </div>
+
+    </div> 
+
+    <div class="myWeek2">
+        <h1>IMF Findings - Week 2</h1>
+        
+        <h3>IMF Lending - Outstanding</h3>
+        <p>Credit Outstanding to all members, 1984-2022 - uncorrected chart</p>
+        <div class="chart" id="chart3"></div>
+
+        <h3>IMF Lending - Percentage of Global GDP</h3>
+        <p>Credit Outstanding to all members, 1984-2021 - corrected chart</p>
+        <div class="chart" id="chart4"></div>
+
+    </div> 
+
+</body>
+
+
+<script>
+
+    //Define charts:
+    var myChart1 = "chartFootball1.json";
+    var myChart2 = "chartFootball2.json";
+    var myChart3 = "IMF.json";
+    var myChart4 = "IMF2.json";
+
+    // Embed charts:
+    vegaEmbed('#chart1', myChart1);
+    vegaEmbed('#chart2', myChart2);
+    vegaEmbed('#chart3', myChart3);
+    vegaEmbed('#chart4', myChart4);
+
+</script>
+
+</html>
+
+
