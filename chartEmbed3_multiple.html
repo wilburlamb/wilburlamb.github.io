@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<!-- Richard Davies, Data Science-->
+<!-- Based on our discussion what is this page going to produce?-->
+
+
+<!-- ///////////////////  HEAD //////////////////////////////////// -->
+<head>
+  <!--The next three lines allow the Vega embed-->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+</head>
+<!-- ///////////////////  HEAD //////////////////////////////////// -->
+
+
+
+<!-- ///////////////////  START BODY //////////////////////////////////// -->
+<body>
+    <!--Divs for 6 charts-->
+    <div class="chart" id="chart1"></div>
+    <div class="chart" id="chart2"></div>
+    <div class="chart" id="chart3"></div>
+    <div class="chart" id="chart4"></div>
+    <div class="chart" id="chart5"></div>
+    <div class="chart" id="chart6"></div>
+</body>
+<!-- ///////////////////  END BODY //////////////////////////////////// -->
+
+
+<!-- ///////////////////  START JS //////////////////////////////////// -->
+<script>
+    // Define our charts:
+    var myChart1 = "chartFootball1.json";
+    var myChart2 = "chartFootball2.json";
+    var myChart3 = "IMF.json";
+    var myChart4 = "IMF2.json";
+    
+    // Embed charts:
+    vegaEmbed('#chart1', myChart1);
+    vegaEmbed('#chart2', myChart2);
+    vegaEmbed('#chart3', myChart3);
+    vegaEmbed('#chart4', myChart4);
+    vegaEmbed('#chart5', myChart5);
+</script>
+<!-- ///////////////////  END JS //////////////////////////////////// -->
+
+</html>

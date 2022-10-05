@@ -30,7 +30,18 @@ h1, h3, p{
     border-width: 10px;
     border-style: solid;
     border-radius: 50px;
-    border-color: rgb(245, 245, 245);
+    border-color: rgb(255, 255, 255);
+}
+.myWeek2{
+        margin: auto;
+        max-width: 800px;
+        background-color: rgb(159, 201, 227);
+    
+          
+        border-width: 10px;
+        border-style: solid;
+        border-radius: 50px;
+        border-color: rgb(255, 255, 255);
 }
 
 
@@ -47,6 +58,9 @@ h1, h3, p{
     
 
 /* Set the apperance for a particular chart */
-#Chart1{
+#chart1{
     width: 372px;   
+}
+#chart4{
+    width: 420px;
 }
