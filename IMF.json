@@ -5,7 +5,7 @@
     "text": "IMF Lending outstanding ",
     "subtitle":"Credit outstanding to all members, SDRs ($, billions). Source: IMF",
     "subtitleFontStyle":"italic",
-    "subtitleFontSize":8,
+    "subtitleFontSize":10,
     "anchor": "start",
     "color": "black"},
 
