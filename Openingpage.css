@@ -1,0 +1,65 @@
+/* FONTS: */
+
+h1{
+    font-family: 'Noto Sans Mono', sans-serif;
+    text-align: center;
+    background-color: rgb(114, 156, 174);
+}
+
+p{
+    font-family: 'Noto Sans Mono', sans-serif;
+    text-align: center;
+    font-size: larger;
+    color:rgb(255, 255, 255);
+    background-color: rgb(105, 125, 155);
+}
+
+
+/* AREAS OF THE PAGE */
+
+body{
+    background-color: rgb(120, 151, 194);
+}
+
+.wrap{
+    background-color: rgb(114, 156, 174);
+}
+
+
+
+
+/* BUTTONS */
+
+.link{
+    background-color: rgba(132, 180, 230, 0.5);
+
+    padding:10px;
+    
+    border:2px;
+    border-color:grey;
+    border-style: solid;
+    border-radius: 10px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:700;
+    color:white;
+    align-content: center;
+    text-decoration: none;
+}
+
+a{
+    border: 5px;
+    border-color: black;
+    border-style: solid;
+    margin: 57px;
+}
+
+.link:hover{
+
+    background-color: rgba(68, 116, 237, 0.821);
+
+    border:2px;
+    border-color:rgb(0, 0, 0);
+    border-style: solid;
+    
+}
