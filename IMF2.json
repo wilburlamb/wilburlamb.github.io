@@ -5,7 +5,7 @@
       "text": "IMF Lending - Percentage of Global GDP ",
       "subtitle":"Credit outstanding to all members, SDRs (% of Global GDP), Sources: IMF and FRED",
       "subtitleFontStyle":"italic",
-      "subtitleFontSize":10,
+      "subtitleFontSize":8,
       "anchor": "start",
       "color": "black"},
   

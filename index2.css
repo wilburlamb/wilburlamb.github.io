@@ -48,7 +48,7 @@ h1, h3, p{
 /* Set the apperance of the class, chart */
 .chart{
     background-color: white;
-    width:402px;
+    width:372px;
     border-width: 10px;
     border-style: solid;
     border-radius: 5px;
@@ -59,8 +59,11 @@ h1, h3, p{
 
 /* Set the apperance for a particular chart */
 #chart1{
-    width: 372px;   
+    width: 372px; 
+}
+#chart3{
+    width: 350px;
 }
 #chart4{
-    width: 420px;
+    width: 350px;
 }
