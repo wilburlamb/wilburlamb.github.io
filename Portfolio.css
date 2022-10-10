@@ -15,6 +15,49 @@ body{
 
 
 /* Choose the appearance of the tags, h1, h3 and p: */
+.wrap{
+    background-color: rgb(114, 156, 174);
+}
+
+
+
+
+/* BUTTONS */
+
+.link{
+    background-color: rgba(132, 180, 230, 0.5);
+
+    padding:10px;
+    
+    border:2px;
+    border-color:grey;
+    border-style: solid;
+    border-radius: 10px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:700;
+    color:white;
+    align-content: center;
+    text-decoration: none;
+}
+
+a{
+    border: 5px;
+    border-color: black;
+    border-style: solid;
+    margin: 110px;
+}
+
+.link:hover{
+
+    background-color: rgba(68, 116, 237, 0.821);
+
+    border:2px;
+    border-color:rgb(0, 0, 0);
+    border-style: solid;
+    
+}
+
 h1, h3, p{
     color:rgb(0, 0, 0);
     font-family: 'Noto Sans Mono', sans-serif;
@@ -27,7 +70,7 @@ h1, h3, p{
     background-color: rgb(206, 235, 231);
 
       
-    border-width: 10px;
+    border-width: 5px;
     border-style: solid;
     border-radius: 50px;
     border-color: rgb(255, 255, 255);
@@ -38,7 +81,7 @@ h1, h3, p{
         background-color: rgb(159, 201, 227);
     
           
-        border-width: 10px;
+        border-width: 5px;
         border-style: solid;
         border-radius: 50px;
         border-color: rgb(255, 255, 255);
@@ -47,20 +90,17 @@ h1, h3, p{
 
 /* Set the apperance of the class, chart */
 .chart{
+    margin: auto;
     background-color: white;
     width:372px;
     border-width: 10px;
     border-style: solid;
-    border-radius: 5px;
+    border-radius: 2px;
     border-color: black;
-    
 }
     
 
 /* Set the apperance for a particular chart */
-#chart1{
-    width: 372px; 
-}
 #chart3{
     width: 350px;
 }

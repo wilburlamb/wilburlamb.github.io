@@ -51,14 +51,14 @@ a{
     border: 5px;
     border-color: black;
     border-style: solid;
-    margin: 57px;
+    margin: 110px;
 }
 
 .link:hover{
 
     background-color: rgba(68, 116, 237, 0.821);
 
-    border:2px;
+    border:4px;
     border-color:rgb(0, 0, 0);
     border-style: solid;
     
