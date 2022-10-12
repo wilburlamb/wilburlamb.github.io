@@ -23,6 +23,7 @@ body{
 
 .wrap{
     background-color: rgb(114, 156, 174);
+    margin: auto;
 }
 
 
@@ -51,7 +52,7 @@ a{
     border: 5px;
     border-color: black;
     border-style: solid;
-    margin: 110px;
+    margin: auto;
 }
 
 .link:hover{
