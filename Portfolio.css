@@ -38,18 +38,23 @@ body{
     font-family: 'Courier New', Courier, monospace;
     font-weight:700;
     color:white;
-    align-content: center;
     text-decoration: none;
 }
 .wrap{
+    display: block;
+    margin: auto;
+   }
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: auto;
 }
-
 a{
     border: 5px;
     border-color: black;
     border-style: solid;
-    margin: auto;
+    margin: 20px ;
 }
 
 .link:hover{
@@ -93,13 +98,17 @@ h1, h3, p{
 
 /* Set the apperance of the class, chart */
 .chart{
-    margin: auto;
     background-color: white;
     width:372px;
     border-width: 10px;
     border-style: solid;
     border-radius: 2px;
     border-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
 }
     
 

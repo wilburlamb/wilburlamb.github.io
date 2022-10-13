@@ -23,7 +23,7 @@ body{
 
 .wrap{
     background-color: rgb(114, 156, 174);
-    margin: auto;
+    display: block ;
 }
 
 
@@ -44,10 +44,13 @@ body{
     font-family: 'Courier New', Courier, monospace;
     font-weight:700;
     color:white;
-    align-content: center;
     text-decoration: none;
 }
-
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 a{
     border: 5px;
     border-color: black;
@@ -59,7 +62,7 @@ a{
 
     background-color: rgba(68, 116, 237, 0.821);
 
-    border:4px;
+    border:2px;
     border-color:rgb(0, 0, 0);
     border-style: solid;
     
