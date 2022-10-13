@@ -10,15 +10,16 @@
 /* Set the background color for my page: */
 body{
     background-color: rgb(139, 177, 167);
- 
-}
+        background-size: cover;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 100vh;
+      }
 
 
 /* Choose the appearance of the tags, h1, h3 and p: */
-.wrap{
-    background-color: rgb(114, 156, 174);
-}
-
 
 
 
@@ -39,6 +40,9 @@ body{
     color:white;
     align-content: center;
     text-decoration: none;
+}
+.wrap{
+    margin: auto;
 }
 
 a{
@@ -68,7 +72,6 @@ h1, h3, p{
     margin: auto;
     max-width: 800px;
     background-color: rgb(206, 235, 231);
-
       
     border-width: 5px;
     border-style: solid;
