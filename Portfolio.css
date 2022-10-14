@@ -100,14 +100,12 @@ h1, h3, p{
 .chart{
     background-color: white;
     width:372px;
-    border-width: 10px;
+    border-width: 3px;
     border-style: solid;
     border-radius: 2px;
-    border-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
+    border-color: rgb(188, 231, 228);
+    margin-left: 205px;
+    margin-right: 205px;
 
 }
     
