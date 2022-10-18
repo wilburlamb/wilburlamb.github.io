@@ -48,13 +48,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
 }
 a{
     border: 5px;
     border-color: black;
     border-style: solid;
-    margin: 20px ;
+    margin: auto;
 }
 
 .link:hover{
@@ -76,7 +75,7 @@ h1, h3, p{
 .myWeek1{
     margin: auto;
     max-width: 800px;
-    background-color: rgb(206, 235, 231);
+    background-color: rgb(206, 228, 235);
       
     border-width: 5px;
     border-style: solid;
@@ -94,6 +93,17 @@ h1, h3, p{
         border-radius: 50px;
         border-color: rgb(255, 255, 255);
 }
+.myWeek3{
+    margin: auto;
+    max-width: 800px;
+    background-color: rgb(73, 103, 121);
+
+      
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: rgb(255, 255, 255);
+}
 
 
 /* Set the apperance of the class, chart */
@@ -104,8 +114,11 @@ h1, h3, p{
     border-style: solid;
     border-radius: 2px;
     border-color: rgb(188, 231, 228);
-    margin-left: 205px;
-    margin-right: 205px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
 
 }
     

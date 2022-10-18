@@ -1,0 +1,111 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "description": "UK GDP Growth Rate (% annual)",
+    "width": 500,
+    "height": 200,
+    "padding": 5,
+    
+    "title": {
+        "text": "UK GDP Growth Rate",
+        "subtitle":["The annual growth of gross domestic product in the UK (%)",""],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black" },
+
+    "signals": [
+      {
+        "name": "interpolate",
+        "value": "linear",
+        "bind": {
+          "input": "select",
+          "options": [
+            "basis",
+            "cardinal",
+            "catmull-rom",
+            "linear",
+            "monotone",
+            "natural",
+            "step",
+            "step-after",
+            "step-before"
+          ]
+        }
+      }
+    ],
+  
+    "data": [
+      {
+        "name": "table",
+        "values": [
+  {"Year": 1961, "Country Code": "GBR", "GDP growth (annual%)": 2.67711894345372}, {"Year": 1962, "Country Code": "GBR", "GDP growth (annual%)": 1.1029096492187}, {"Year": 1963, "Country Code": "GBR", "GDP growth (annual%)": 4.8743839976478}, {"Year": 1964, "Country Code": "GBR", "GDP growth (annual%)": 5.53365938602349}, {"Year": 1965, "Country Code": "GBR", "GDP growth (annual%)": 2.14217654354569}, {"Year": 1966, "Country Code": "GBR", "GDP growth (annual%)": 1.57310041405223}, {"Year": 1967, "Country Code": "GBR", "GDP growth (annual%)": 2.78647464167507}, {"Year": 1968, "Country Code": "GBR", "GDP growth (annual%)": 5.44108343766115}, {"Year": 1969, "Country Code": "GBR", "GDP growth (annual%)": 1.92409683469894}, {"Year": 1970, "Country Code": "GBR", "GDP growth (annual%)": 6.31790666607679}, {"Year": 1971, "Country Code": "GBR", "GDP growth (annual%)": 3.50471735146473}, {"Year": 1972, "Country Code": "GBR", "GDP growth (annual%)": 4.32166766730984}, {"Year": 1973, "Country Code": "GBR", "GDP growth (annual%)": 6.52384844544498}, {"Year": 1974, "Country Code": "GBR", "GDP growth (annual%)": -2.48440400338406}, {"Year": 1975, "Country Code": "GBR", "GDP growth (annual%)": -1.47364947033378}, {"Year": 1976, "Country Code": "GBR", "GDP growth (annual%)": 2.91026617792257}, {"Year": 1977, "Country Code": "GBR", "GDP growth (annual%)": 2.45775046032897}, {"Year": 1978, "Country Code": "GBR", "GDP growth (annual%)": 4.20426054866481}, {"Year": 1979, "Country Code": "GBR", "GDP growth (annual%)": 3.74901651043007}, {"Year": 1980, "Country Code": "GBR", "GDP growth (annual%)": -2.03136778824265}, {"Year": 1981, "Country Code": "GBR", "GDP growth (annual%)": -0.787743815803793}, {"Year": 1982, "Country Code": "GBR", "GDP growth (annual%)": 1.99489131235828}, {"Year": 1983, "Country Code": "GBR", "GDP growth (annual%)": 4.22185627744311}, {"Year": 1984, "Country Code": "GBR", "GDP growth (annual%)": 2.26910517791023}, {"Year": 1985, "Country Code": "GBR", "GDP growth (annual%)": 4.14741499833957}, {"Year": 1986, "Country Code": "GBR", "GDP growth (annual%)": 3.15034054316553}, {"Year": 1987, "Country Code": "GBR", "GDP growth (annual%)": 5.39273830702331}, {"Year": 1988, "Country Code": "GBR", "GDP growth (annual%)": 5.73241372190093}, {"Year": 1989, "Country Code": "GBR", "GDP growth (annual%)": 2.57760269228832}, {"Year": 1990, "Country Code": "GBR", "GDP growth (annual%)": 0.733755520212199}, {"Year": 1991, "Country Code": "GBR", "GDP growth (annual%)": -1.10312166213757}, {"Year": 1992, "Country Code": "GBR", "GDP growth (annual%)": 0.401082076194314}, {"Year": 1993, "Country Code": "GBR", "GDP growth (annual%)": 2.48983098546481}, {"Year": 1994, "Country Code": "GBR", "GDP growth (annual%)": 3.84600916756006}, {"Year": 1995, "Country Code": "GBR", "GDP growth (annual%)": 2.53167000519647}, {"Year": 1996, "Country Code": "GBR", "GDP growth (annual%)": 2.42854289501106}, {"Year": 1997, "Country Code": "GBR", "GDP growth (annual%)": 4.9090257402803}, {"Year": 1998, "Country Code": "GBR", "GDP growth (annual%)": 3.15397337529933}, {"Year": 1999, "Country Code": "GBR", "GDP growth (annual%)": 2.99011144494511}, {"Year": 2000, "Country Code": "GBR", "GDP growth (annual%)": 3.6723691050331}, {"Year": 2001, "Country Code": "GBR", "GDP growth (annual%)": 2.07265627894577}, {"Year": 2002, "Country Code": "GBR", "GDP growth (annual%)": 2.12322277320661}, {"Year": 2003, "Country Code": "GBR", "GDP growth (annual%)": 3.02988992743832}, {"Year": 2004, "Country Code": "GBR", "GDP growth (annual%)": 2.35562976182804}, {"Year": 2005, "Country Code": "GBR", "GDP growth (annual%)": 2.59328001020944}, {"Year": 2006, "Country Code": "GBR", "GDP growth (annual%)": 2.58410467657816}, {"Year": 2007, "Country Code": "GBR", "GDP growth (annual%)": 2.26948687466346}, {"Year": 2008, "Country Code": "GBR", "GDP growth (annual%)": -0.239638084998987}, {"Year": 2009, "Country Code": "GBR", "GDP growth (annual%)": -4.24735626579708}, {"Year": 2010, "Country Code": "GBR", "GDP growth (annual%)": 2.13143819777204}, {"Year": 2011, "Country Code": "GBR", "GDP growth (annual%)": 1.4575633909042}, {"Year": 2012, "Country Code": "GBR", "GDP growth (annual%)": 1.46988752075868}, {"Year": 2013, "Country Code": "GBR", "GDP growth (annual%)": 1.8900183424514}, {"Year": 2014, "Country Code": "GBR", "GDP growth (annual%)": 2.99116481375781}, {"Year": 2015, "Country Code": "GBR", "GDP growth (annual%)": 2.62259667901294}, {"Year": 2016, "Country Code": "GBR", "GDP growth (annual%)": 2.26346353784494}, {"Year": 2017, "Country Code": "GBR", "GDP growth (annual%)": 2.13445309331686}, {"Year": 2018, "Country Code": "GBR", "GDP growth (annual%)": 1.65092549602133}, {"Year": 2019, "Country Code": "GBR", "GDP growth (annual%)": 1.67194419724758}, {"Year": 2020, "Country Code": "GBR", "GDP growth (annual%)": -9.27041083453351}, {"Year": 2021, "Country Code": "GBR", "GDP growth (annual%)": 7.44127309273938}
+        ]
+      }
+    ],
+  
+    "scales": [
+      {
+        "name": "x",
+        "type": "point",
+        "range": "width",
+        "domain": {"data": "table", "field": "Year"}
+      },
+      {
+        "name": "y",
+        "type": "linear",
+        "range": "height",
+        "nice": true,
+        "zero": true,
+        "domain": {"data": "table", "field": "GDP growth (annual%)"}
+      },
+  
+      {
+        "name": "color",
+        "type": "ordinal",
+        "range": "category",
+        "domain": {"data": "table", "field": "Country Code"}
+      }
+    ],
+  
+    "axes": [
+      {"orient": "bottom", "scale": "x"},
+      {"orient": "left", "scale": "y"}
+    ],
+  
+    "marks": [
+      {
+        "type": "group",
+        "from": {
+          "facet": {
+            "name": "series",
+            "data": "table",
+            "groupby": "Country Code"
+          }
+        },
+        "marks": [
+          {
+            "type": "line",
+            "from": {"data": "series"},
+            "encode": {
+              "enter": {
+                "x": {"scale": "x", "field": "Year"},
+                "y": {"scale": "y", "field": "GDP growth (annual%)"},
+                "tooltip":{"field": "Year", "type": "point"},
+                "stroke": {"scale": "color", "field": "Country Code"},
+                "strokeWidth": {"value": 2}
+              },
+              "update": {
+                "interpolate": {"signal": "interpolate"},
+                "strokeOpacity": {"value": 0.9},
+                "strokeWidth": {"value": 2}
+              },
+              "hover": {
+                "strokeOpacity": {"value": 1},
+                "strokeWidth": {"value": 3}
+            }
+          }
+          }
+        ]
+      }
+    ]
+  }

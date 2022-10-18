@@ -31,7 +31,7 @@
     <div class = "links">   
         <a href="index.html" class="link" id="link2">Home</a>
         <a href="Project.html" class="link" id="link1">Project</a>
-        <a href="About.html" class= "link" id="link3">About me</a>
+        <a href="About.html" class= "link" id="link3">About</a>
         <a href="https://github.com/wilburlamb/wilburlamb.github.io" class= "link" id="link4">GitHub</a>
     </div>
    
@@ -42,8 +42,8 @@
         <p>A chart illustrating the accumulation of home and away goals across the 2021/22 Premeir Leauge season</p>
         <div class="chart" id="chart1"></div>
 
-        <h3>Home Goals - Top 6</h3>
-        <p>A set of charts depicting the amount of home goals scored by the top 6 sides in the Premier Leauge in the 2020/21 season</p>
+        <h3>Home Goals - 6 Premier Leauge Sides</h3>
+        <p>A set of charts depicting the amount of home goals scored by 6 sides in the Premier Leauge in the 2020/21 season</p>
         <div class="chart" id="chart2"> </div>
 
     </div> 
@@ -64,7 +64,16 @@
             the highest proportion of global GDP during this period.
         </p>
     </div> 
+    
+    <div class="myWeek3">
+        <h1>Gross Domestic Product - Week 3</h1>
+        
+        <h3>UK GDP</h3>
+        <p>The growth rate of UK GDP, 1960 - 2021 (% annual)</p>
+        <div class="chart" id="chart5"></div>
 
+        </p>
+    </div> 
 </body>
 
 
@@ -75,12 +84,14 @@
     var myChart2 = "chartFootball2.json";
     var myChart3 = "IMF.json";
     var myChart4 = "IMF2.json";
+    var mychart5 = "UKGDP.json";
 
     // Embed charts:
     vegaEmbed('#chart1', myChart1);
     vegaEmbed('#chart2', myChart2);
     vegaEmbed('#chart3', myChart3);
     vegaEmbed('#chart4', myChart4);
+    vegaEmbed('#chart5', myChart5);
 
 </script>
 
