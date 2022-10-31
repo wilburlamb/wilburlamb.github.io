@@ -115,7 +115,17 @@ h1, h3, p{
     border-radius: 50px;
     border-color: rgb(255, 255, 255);
 }
+.myWeek5{
+    margin: auto;
+    max-width: 800px;
+    background-color: rgb(21, 31, 37);
 
+      
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: rgb(255, 255, 255);
+}
 /* Set the apperance of the class, chart */
 .chart{
     background-color: white;
@@ -131,6 +141,7 @@ h1, h3, p{
     margin: auto;
 
 }
+
     
 
 /* Set the apperance for a particular chart */
@@ -149,4 +160,25 @@ h1, h3, p{
 }
 #chart7{
     width: 580px;
+}
+#chart8{
+    width:230px
+}
+#chart9{
+    width:230px
+}#chart10{
+    width:230px
+}#chart11{
+    width:230px
+}#chart12{
+    width:230px
+}#chart13{
+    width:230px
+}#chart14{
+    width:230px
+}
+#chart15{
+    width:230px
+}#chart16{
+    width:230px
 }
