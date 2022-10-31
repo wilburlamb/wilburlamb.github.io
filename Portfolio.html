@@ -68,11 +68,29 @@
     <div class="myWeek3">
         <h1>Gross Domestic Product - Week 3</h1>
         
-        <h3>UK GDP</h3>
-        <p>The growth rate of UK GDP, 1960 - 2021 (% annual)</p>
+        <h3>GDP</h3>
+        <p>The growth rate of UK and France GDP, 1960 - 2021 (% annual)</p>
         <div class="chart" id="chart5"></div>
 
+        <h3>GDP</h3>
+        <p>The growth rate of UK and France GDP, 1960 - 2021 (% annual)</p>
+        <div class="chart" id="chart6"></div>
         </p>
+    </div> 
+
+    <div class="myWeek4">
+        <h1>Football Transfers - Scraping - Week 4</h1>
+        
+        <h3>Most Expensive Transfers</h3>
+        <p>The most expensive association football transfers of all time (€ millions)</p>
+        <div class="chart" id="chart7"></div>
+
+        <a href="https://colab.research.google.com/drive/1IC969z1fJeduYxML3KTie0qxZa7vPsVd#scrollTo=LrBK0dnaTCcd" class="link" id="link4">CoLab1  </a>
+
+        <h3>Analysis</h3>
+        <p> I chose this website because it has a well formatted tabel of data, with all the information I needed to perform this task.
+        </p>
+
     </div> 
 </body>
 
@@ -84,15 +102,18 @@
     var myChart2 = "chartFootball2.json";
     var myChart3 = "IMF.json";
     var myChart4 = "IMF2.json";
-    var mychart5 = "UKGDP.json";
-
+    var myChart5 = "GDP.json";
+    var myChart6 = "GDP2.json";
+    var myChart7 = "Transfers.json";
+    
     // Embed charts:
     vegaEmbed('#chart1', myChart1);
     vegaEmbed('#chart2', myChart2);
     vegaEmbed('#chart3', myChart3);
     vegaEmbed('#chart4', myChart4);
     vegaEmbed('#chart5', myChart5);
-
+    vegaEmbed('#chart6', myChart6);
+    vegaEmbed('#chart7', myChart7);
 </script>
 
 </html>

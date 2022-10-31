@@ -1,0 +1,82 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "description": "A basic stacked bar chart example.",
+    "width": 500,
+    "height": 200,
+    "padding": 5,
+    "title": {
+          "text": "Most Expensive Association Football Transfers",
+          "subtitle":["The 100 most expensive football transfers of all time (€millons)",""],
+          "subtitleFontStyle":"italic",
+          "subtitleFontSize":10,
+          "anchor": "start",
+          "color": "black" },
+  
+    "data": [
+      {
+        "name": "table",
+        "values": [{"Pos.": "=98", "Player": "Christian Vieri", "Clubs": "Lazio - Inter", "Year": 1999, "Transfer Fee": 49.0}, {"Pos.": "=80", "Player": "Hernan Crespo", "Clubs": "Parma\u00a0-\u00a0Lazio", "Year": 2000, "Transfer Fee": 55.0}, {"Pos.": "=61", "Player": "Luis Figo", "Clubs": "Barcelona - Real Madrid", "Year": 2000, "Transfer Fee": 60.0}, {"Pos.": "30", "Player": "Zinedine Zidane", "Clubs": "Juventus - Real Madrid", "Year": 2001, "Transfer Fee": 77.5}, {"Pos.": "86", "Player": "Gianluigi Buffon", "Clubs": "Parma - Juventus", "Year": 2001, "Transfer Fee": 52.0}, {"Pos.": "=50", "Player": "Kaka", "Clubs": "AC Milan\u00a0- Real Madrid", "Year": 2009, "Transfer Fee": 65.0}, {"Pos.": "14", "Player": "Cristiano Ronaldo", "Clubs": "Manchester United - Real Madrid", "Year": 2009, "Transfer Fee": 94.0}, {"Pos.": "43", "Player": "Zlatan Ibrahimovic", "Clubs": "Inter\u00a0- Barcelona", "Year": 2009, "Transfer Fee": 69.5}, {"Pos.": "=67", "Player": "Fernando Torres", "Clubs": "Liverpool - Chelsea", "Year": 2011, "Transfer Fee": 59.0}, {"Pos.": "10", "Player": "Gareth Bale", "Clubs": "Tottenham - Real Madrid", "Year": 2013, "Transfer Fee": 100.8}, {"Pos.": "55", "Player": "Edinson Cavani", "Clubs": "Napoli - PSG", "Year": 2013, "Transfer Fee": 64.5}, {"Pos.": "17", "Player": "Neymar", "Clubs": "Santos - Barcelona", "Year": 2013, "Transfer Fee": 86.2}, {"Pos.": "87", "Player": "Eliaquim Mangala", "Clubs": "Porto - Manchester City", "Year": 2014, "Transfer Fee": 51.7}, {"Pos.": "58", "Player": "David Luiz", "Clubs": "Chelsea - PSG", "Year": 2014, "Transfer Fee": 62.5}, {"Pos.": "=23", "Player": "James Rodriguez", "Clubs": "Monaco - Real Madrid", "Year": 2014, "Transfer Fee": 80.0}, {"Pos.": "36", "Player": "Angel Di Maria", "Clubs": "Real Madrid - Manchester United", "Year": 2014, "Transfer Fee": 74.6}, {"Pos.": "21", "Player": "Luis Suarez", "Clubs": "Liverpool - Barcelona", "Year": 2014, "Transfer Fee": 82.3}, {"Pos.": "44", "Player": "Raheem Sterling", "Clubs": "Liverpool - Manchester City", "Year": 2015, "Transfer Fee": 69.1}, {"Pos.": "=31", "Player": "Kevin De Bruyne", "Clubs": "Wolfsburg\u00a0-\u00a0Manchester City", "Year": 2015, "Transfer Fee": 75.0}, {"Pos.": "59", "Player": "Angel Di Maria", "Clubs": "Manchester United - PSG", "Year": 2015, "Transfer Fee": 61.6}, {"Pos.": "96", "Player": "Anthony Martial", "Clubs": "Monaco - Manchester United", "Year": 2015, "Transfer Fee": 49.3}, {"Pos.": "15", "Player": "Gonzalo Higuain", "Clubs": "Napoli - Juventus", "Year": 2016, "Transfer Fee": 90.0}, {"Pos.": "=8", "Player": "Paul Pogba", "Clubs": "Juventus - Manchester United", "Year": 2016, "Transfer Fee": 105.0}, {"Pos.": "=69", "Player": "Hulk", "Clubs": "Zenit - Shanghai SIPG", "Year": 2016, "Transfer Fee": 58.6}, {"Pos.": "=89", "Player": "Alex Teixeira", "Clubs": "Shakhtar Donetsk - Jiangsu Suning", "Year": 2016, "Transfer Fee": 50.0}, {"Pos.": "=74", "Player": "John Stones", "Clubs": "Everton\u00a0- Manchester City", "Year": 2016, "Transfer Fee": 58.0}, {"Pos.": "=83", "Player": "Alexandre Lacazette", "Clubs": "Lyon - Arsenal", "Year": 2017, "Transfer Fee": 53.0}, {"Pos.": "=89", "Player": "Bernardo Silva", "Clubs": "Monaco - Manchester City", "Year": 2017, "Transfer Fee": 50.0}, {"Pos.": "60", "Player": "Oscar", "Clubs": "Chelsea - Shanghai SIPG", "Year": 2017, "Transfer Fee": 60.3}, {"Pos.": "1", "Player": "Neymar", "Clubs": "Barcelona - PSG", "Year": 2017, "Transfer Fee": 222.0}, {"Pos.": "2", "Player": "Kylian Mbappe", "Clubs": "Monaco - PSG", "Year": 2017, "Transfer Fee": 145.0}, {"Pos.": "97", "Player": "Gylfi Sigurdsson", "Clubs": "Swansea City\u00a0- Everton", "Year": 2017, "Transfer Fee": 49.2}, {"Pos.": "19", "Player": "Romelu Lukaku", "Clubs": "Everton\u00a0- Manchester United", "Year": 2017, "Transfer Fee": 84.8}, {"Pos.": "76", "Player": "Kyle Walker", "Clubs": "Tottenham - Manchester City", "Year": 2017, "Transfer Fee": 56.7}, {"Pos.": "73", "Player": "Benjamin Mendy", "Clubs": "Monaco - Manchester City", "Year": 2017, "Transfer Fee": 58.2}, {"Pos.": "=8", "Player": "Ousmane Dembele", "Clubs": "Borussia Dortmund - Barcelona", "Year": 2017, "Transfer Fee": 105.0}, {"Pos.": "29", "Player": "Alvaro Morata", "Clubs": "Real Madrid - Chelsea", "Year": 2017, "Transfer Fee": 78.9}, {"Pos.": "=11", "Player": "Cristiano Ronaldo", "Clubs": "Real Madrid - Juventus", "Year": 2018, "Transfer Fee": 100.0}, {"Pos.": "=50", "Player": "Thomas Lemar", "Clubs": "Monaco - Atletico Madrid", "Year": 2018, "Transfer Fee": 65.0}, {"Pos.": "=89", "Player": "Fabinho", "Clubs": "Monaco - Liverpool", "Year": 2018, "Transfer Fee": 50.0}, {"Pos.": "48", "Player": "Diego Costa", "Clubs": "Chelsea - Atletico Madrid", "Year": 2018, "Transfer Fee": 66.0}, {"Pos.": "=4", "Player": "Philippe Coutinho", "Clubs": "Liverpool - Barcelona", "Year": 2018, "Transfer Fee": 120.0}, {"Pos.": "=50", "Player": "Aymeric Laporte", "Clubs": "Athletic Club - Manchester City", "Year": 2018, "Transfer Fee": 65.0}, {"Pos.": "=69", "Player": "Jorginho", "Clubs": "Napoli - Chelsea", "Year": 2018, "Transfer Fee": 58.9}, {"Pos.": "37", "Player": "Alisson Becker", "Clubs": "Roma\u00a0- Liverpool", "Year": 2018, "Transfer Fee": 73.0}, {"Pos.": "20", "Player": "Virgil van Dijk", "Clubs": "Southampton\u00a0- Liverpool", "Year": 2018, "Transfer Fee": 84.5}, {"Pos.": "=61", "Player": "Naby Keita", "Clubs": "RB Leipzig\u00a0- Liverpool", "Year": 2018, "Transfer Fee": 60.0}, {"Pos.": "=23", "Player": "Kepa Arrizabalaga", "Clubs": "Athletic Club - Chelsea", "Year": 2018, "Transfer Fee": 80.0}, {"Pos.": "=69", "Player": "Fred", "Clubs": "Shakhtar Donetsk\u00a0- Manchester United", "Year": 2018, "Transfer Fee": 58.9}, {"Pos.": "57", "Player": "Pierre-Emerick Aubameyang", "Clubs": "Borussia Dortmund - Arsenal", "Year": 2018, "Transfer Fee": 63.75}, {"Pos.": "56", "Player": "Christian Pulisic", "Clubs": "Borussia Dortmund - Chelsea", "Year": 2019, "Transfer Fee": 64.0}, {"Pos.": "=50", "Player": "Joao Cancelo", "Clubs": "Juventus - Manchester City", "Year": 2019, "Transfer Fee": 65.0}, {"Pos.": "=61", "Player": "Tanguy Ndombele", "Clubs": "Lyon\u00a0- Tottenham", "Year": 2019, "Transfer Fee": 60.0}, {"Pos.": "=40", "Player": "Rodri", "Clubs": "Atletico Madrid - Manchester City", "Year": 2019, "Transfer Fee": 70.0}, {"Pos.": "46", "Player": "Riyad Mahrez", "Clubs": "Leicester City\u00a0- Manchester City", "Year": 2019, "Transfer Fee": 67.8}, {"Pos.": "3", "Player": "Joao Felix", "Clubs": "Benfica - Atletico Madrid", "Year": 2019, "Transfer Fee": 126.0}, {"Pos.": "=4", "Player": "Antoine Griezmann", "Clubs": "Atletico Madrid - Barcelona", "Year": 2019, "Transfer Fee": 120.0}, {"Pos.": "=11", "Player": "Eden Hazard", "Clubs": "Chelsea - Real Madrid", "Year": 2019, "Transfer Fee": 100.0}, {"Pos.": "16", "Player": "Harry Maguire", "Clubs": "Leicester City - Manchester United", "Year": 2019, "Transfer Fee": 87.1}, {"Pos.": "=89", "Player": "Eder Militao", "Clubs": "Porto - Real Madrid", "Year": 2019, "Transfer Fee": 50.0}, {"Pos.": "=23", "Player": "Romelu Lukaku", "Clubs": "Manchester United - Inter", "Year": 2019, "Transfer Fee": 80.0}, {"Pos.": "28", "Player": "Nicolas Pepe", "Clubs": "Lille - Arsenal", "Year": 2019, "Transfer Fee": 79.0}, {"Pos.": "=31", "Player": "Matthijs de Ligt", "Clubs": "Ajax\u00a0- Juventus", "Year": 2019, "Transfer Fee": 75.0}, {"Pos.": "=23", "Player": "Lucas Hernandez", "Clubs": "Atletico Madrid -\u00a0Bayern Munich", "Year": 2019, "Transfer Fee": 80.0}, {"Pos.": "=40", "Player": "Luka Jovic", "Clubs": "Eintracht Frankfurt - Real Madrid", "Year": 2019, "Transfer Fee": 70.0}, {"Pos.": "=89", "Player": "Aaron Wan-Bissaka", "Clubs": "Crystal Palace\u00a0- Manchester United", "Year": 2019, "Transfer Fee": 50.0}, {"Pos.": "=31", "Player": "Frenkie de Jong", "Clubs": "Ajax - Barcelona", "Year": 2019, "Transfer Fee": 75.0}, {"Pos.": "=89", "Player": "Thomas Partey", "Clubs": "Atletico Madrid\u00a0- Arsenal", "Year": 2020, "Transfer Fee": 50.0}, {"Pos.": "45", "Player": "Ruben Dias", "Clubs": "Benfica - Manchester City", "Year": 2020, "Transfer Fee": 68.0}, {"Pos.": "=80", "Player": "Bruno Fernandes", "Clubs": "Sporting C.P. - Manchester United", "Year": 2020, "Transfer Fee": 55.0}, {"Pos.": "78", "Player": "Ben Chilwell", "Clubs": "Leicester City - Chelsea", "Year": 2020, "Transfer Fee": 55.8}, {"Pos.": "=40", "Player": "Kai Havertz", "Clubs": "Bayer Leverkusen - Chelsea", "Year": 2020, "Transfer Fee": 70.0}, {"Pos.": "=83", "Player": "Timo Werner", "Clubs": "RB Leipzig - Chelsea", "Year": 2020, "Transfer Fee": 53.0}, {"Pos.": "=89", "Player": "Victor Oshimhen", "Clubs": "Lille - Napoli", "Year": 2020, "Transfer Fee": 50.0}, {"Pos.": "=98", "Player": "Leroy Sane", "Clubs": "Manchester City - Bayern Munich", "Year": 2020, "Transfer Fee": 49.0}, {"Pos.": "=69", "Player": "Ben White", "Clubs": "Brighton - Arsenal", "Year": 2021, "Transfer Fee": 58.6}, {"Pos.": "18", "Player": "Jadon Sancho", "Clubs": "Borussia Dortmund - Manchester United", "Year": 2021, "Transfer Fee": 85.0}, {"Pos.": "7", "Player": "Romelu Lukaku", "Clubs": "Inter - Chelsea", "Year": 2021, "Transfer Fee": 115.0}, {"Pos.": "6", "Player": "Jack Grealish", "Clubs": "Aston Villa - Manchester City", "Year": 2021, "Transfer Fee": 117.0}, {"Pos.": "=80", "Player": "Ferran Torres", "Clubs": "Manchester City - Barcelona", "Year": 2021, "Transfer Fee": 55.0}, {"Pos.": "88", "Player": "Jules Kounde", "Clubs": "Sevilla - Barcelona", "Year": 2022, "Transfer Fee": 50.0}, {"Pos.": "=50", "Player": "Alexander Isak", "Clubs": "Real Sociedad - Newcastle United", "Year": 2022, "Transfer Fee": 65.0}, {"Pos.": "79", "Player": "Lisandro Martinez", "Clubs": "Ajax - Manchester United", "Year": 2022, "Transfer Fee": 55.3}, {"Pos.": "77", "Player": "Raheem Sterling", "Clubs": "Manchester City - Chelsea", "Year": 2022, "Transfer Fee": 56.2}, {"Pos.": "=74", "Player": "Richarlison", "Clubs": "Everton\u00a0- Tottenham", "Year": 2022, "Transfer Fee": 58.0}, {"Pos.": "=67", "Player": "Raphinha", "Clubs": "Leeds United - Barcelona", "Year": 2022, "Transfer Fee": 59.0}, {"Pos.": "=61", "Player": "Erling Haaland", "Clubs": "Borussia Dortmund\u00a0- Manchester City", "Year": 2022, "Transfer Fee": 60.0}, {"Pos.": "49", "Player": "Marc Cucurella", "Clubs": "Brighton - Chelsea", "Year": 2022, "Transfer Fee": 65.1}, {"Pos.": "47", "Player": "Matthijs de Ligt", "Clubs": "Juventus - Bayern Munich", "Year": 2022, "Transfer Fee": 67.0}, {"Pos.": "39", "Player": "Casemiro", "Clubs": "Real Madrid - Manchester United", "Year": 2022, "Transfer Fee": 71.0}, {"Pos.": "=31", "Player": "Dusan Vlahovic", "Clubs": "Fiorentina - Juventus", "Year": 2022, "Transfer Fee": 75.0}, {"Pos.": "=31", "Player": "Darwin Nunez", "Clubs": "Benfica - Liverpool", "Year": 2022, "Transfer Fee": 75.0}, {"Pos.": "=23", "Player": "Aurelien Tchouameni", "Clubs": "Monaco - Real Madrid", "Year": 2022, "Transfer Fee": 80.0}, {"Pos.": "22", "Player": "Wesley Fofana", "Clubs": "Leicester City - Chelsea", "Year": 2022, "Transfer Fee": 80.6}, {"Pos.": "13", "Player": "Antony", "Clubs": "Ajax - Manchester United", "Year": 2022, "Transfer Fee": 95.0}, {"Pos.": "85", "Player": "Gabriel Jesus", "Clubs": "Manchester City - Arsenal", "Year": 2022, "Transfer Fee": 52.3}, {"Pos.": "100", "Player": "Kalvin Phillips", "Clubs": "Leeds United - Manchester City", "Year": 2022, "Transfer Fee": 48.8}]
+        ,
+        "transform": [
+          {
+            "type": "stack",
+            "groupby": ["Year"],
+            "sort": {"field": "Transfer Fee"},
+            "field": "Transfer Fee"
+          }
+        ]
+      }
+    ],
+  
+    "scales": [
+      {
+        "name": "x",
+        "type": "band",
+        "range": "width",
+        "domain": {"data": "table", "field": "Year"}
+      },
+      {
+        "name": "y",
+        "type": "linear",
+        "range": "height",
+        "nice": true, "zero": true,
+        "domain": {"data": "table", "field": "y1"}
+      },
+      {
+        "name": "color",
+        "type": "ordinal",
+        "range": "category",
+        "domain": {"data": "table", "field": "Player"}
+      }
+    ],
+  
+    "axes": [
+      {"orient": "bottom", "scale": "x", "zindex": 1},
+      {"orient": "left", "scale": "y", "zindex": 1}
+    ],
+  
+    "marks": [
+      {
+        "type": "rect",
+        "from": {"data": "table"},
+        "encode": {
+          "enter": {
+            "x": {"scale": "x", "field": "Year"},
+            "width": {"scale": "x", "band": 1, "offset": -1},
+            "y": {"scale": "y", "field": "y0"},
+            "y2": {"scale": "y", "field": "y1"},
+            "fill": {"scale": "color", "field": "Player"},
+            "tooltip": {"field": "Player", "type": "point"}
+  
+          },
+          "update": {
+            "fillOpacity": {"value": 1}
+          },
+          "hover": {
+            "fillOpacity": {"value": 0.5}
+          
+          }
+        }
+      }  
+    ]
+  }

@@ -104,7 +104,17 @@ h1, h3, p{
     border-radius: 50px;
     border-color: rgb(255, 255, 255);
 }
+.myWeek4{
+    margin: auto;
+    max-width: 800px;
+    background-color: rgb(47, 67, 79);
 
+      
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: rgb(255, 255, 255);
+}
 
 /* Set the apperance of the class, chart */
 .chart{
@@ -129,4 +139,14 @@ h1, h3, p{
 }
 #chart4{
     width: 350px;
+}
+#chart5{ 
+    width: 550px;
+
+}
+#chart6{ 
+    width: 550px;
+}
+#chart7{
+    width: 580px;
 }

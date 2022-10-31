@@ -1,0 +1,111 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "UK GDP Growth Rate (% annual)",
+  "width": 500,
+  "height": 200,
+  "padding": 5,
+  
+  "title": {
+      "text": "GDP Growth Rate",
+      "subtitle":["The annual growth of Gross Domestic Product in the France and the UK (%)",""],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black" },
+
+  "signals": [
+    {
+      "name": "interpolate",
+      "value": "linear",
+      "bind": {
+        "input": "select",
+        "options": [
+          "basis",
+          "cardinal",
+          "catmull-rom",
+          "linear",
+          "monotone",
+          "natural",
+          "step",
+          "step-after",
+          "step-before"
+        ]
+      }
+    }
+  ],
+
+  "data": [
+    {
+      "name": "table",
+      "values": [
+{"Year": 1961, "Country Code": "GBR", "GDP growth (annual%)": 2.67711894345372}, {"Year": 1962, "Country Code": "GBR", "GDP growth (annual%)": 1.1029096492187}, {"Year": 1963, "Country Code": "GBR", "GDP growth (annual%)": 4.8743839976478}, {"Year": 1964, "Country Code": "GBR", "GDP growth (annual%)": 5.53365938602349}, {"Year": 1965, "Country Code": "GBR", "GDP growth (annual%)": 2.14217654354569}, {"Year": 1966, "Country Code": "GBR", "GDP growth (annual%)": 1.57310041405223}, {"Year": 1967, "Country Code": "GBR", "GDP growth (annual%)": 2.78647464167507}, {"Year": 1968, "Country Code": "GBR", "GDP growth (annual%)": 5.44108343766115}, {"Year": 1969, "Country Code": "GBR", "GDP growth (annual%)": 1.92409683469894}, {"Year": 1970, "Country Code": "GBR", "GDP growth (annual%)": 6.31790666607679}, {"Year": 1971, "Country Code": "GBR", "GDP growth (annual%)": 3.50471735146473}, {"Year": 1972, "Country Code": "GBR", "GDP growth (annual%)": 4.32166766730984}, {"Year": 1973, "Country Code": "GBR", "GDP growth (annual%)": 6.52384844544498}, {"Year": 1974, "Country Code": "GBR", "GDP growth (annual%)": -2.48440400338406}, {"Year": 1975, "Country Code": "GBR", "GDP growth (annual%)": -1.47364947033378}, {"Year": 1976, "Country Code": "GBR", "GDP growth (annual%)": 2.91026617792257}, {"Year": 1977, "Country Code": "GBR", "GDP growth (annual%)": 2.45775046032897}, {"Year": 1978, "Country Code": "GBR", "GDP growth (annual%)": 4.20426054866481}, {"Year": 1979, "Country Code": "GBR", "GDP growth (annual%)": 3.74901651043007}, {"Year": 1980, "Country Code": "GBR", "GDP growth (annual%)": -2.03136778824265}, {"Year": 1981, "Country Code": "GBR", "GDP growth (annual%)": -0.787743815803793}, {"Year": 1982, "Country Code": "GBR", "GDP growth (annual%)": 1.99489131235828}, {"Year": 1983, "Country Code": "GBR", "GDP growth (annual%)": 4.22185627744311}, {"Year": 1984, "Country Code": "GBR", "GDP growth (annual%)": 2.26910517791023}, {"Year": 1985, "Country Code": "GBR", "GDP growth (annual%)": 4.14741499833957}, {"Year": 1986, "Country Code": "GBR", "GDP growth (annual%)": 3.15034054316553}, {"Year": 1987, "Country Code": "GBR", "GDP growth (annual%)": 5.39273830702331}, {"Year": 1988, "Country Code": "GBR", "GDP growth (annual%)": 5.73241372190093}, {"Year": 1989, "Country Code": "GBR", "GDP growth (annual%)": 2.57760269228832}, {"Year": 1990, "Country Code": "GBR", "GDP growth (annual%)": 0.733755520212199}, {"Year": 1991, "Country Code": "GBR", "GDP growth (annual%)": -1.10312166213757}, {"Year": 1992, "Country Code": "GBR", "GDP growth (annual%)": 0.401082076194314}, {"Year": 1993, "Country Code": "GBR", "GDP growth (annual%)": 2.48983098546481}, {"Year": 1994, "Country Code": "GBR", "GDP growth (annual%)": 3.84600916756006}, {"Year": 1995, "Country Code": "GBR", "GDP growth (annual%)": 2.53167000519647}, {"Year": 1996, "Country Code": "GBR", "GDP growth (annual%)": 2.42854289501106}, {"Year": 1997, "Country Code": "GBR", "GDP growth (annual%)": 4.9090257402803}, {"Year": 1998, "Country Code": "GBR", "GDP growth (annual%)": 3.15397337529933}, {"Year": 1999, "Country Code": "GBR", "GDP growth (annual%)": 2.99011144494511}, {"Year": 2000, "Country Code": "GBR", "GDP growth (annual%)": 3.6723691050331}, {"Year": 2001, "Country Code": "GBR", "GDP growth (annual%)": 2.07265627894577}, {"Year": 2002, "Country Code": "GBR", "GDP growth (annual%)": 2.12322277320661}, {"Year": 2003, "Country Code": "GBR", "GDP growth (annual%)": 3.02988992743832}, {"Year": 2004, "Country Code": "GBR", "GDP growth (annual%)": 2.35562976182804}, {"Year": 2005, "Country Code": "GBR", "GDP growth (annual%)": 2.59328001020944}, {"Year": 2006, "Country Code": "GBR", "GDP growth (annual%)": 2.58410467657816}, {"Year": 2007, "Country Code": "GBR", "GDP growth (annual%)": 2.26948687466346}, {"Year": 2008, "Country Code": "GBR", "GDP growth (annual%)": -0.239638084998987}, {"Year": 2009, "Country Code": "GBR", "GDP growth (annual%)": -4.24735626579708}, {"Year": 2010, "Country Code": "GBR", "GDP growth (annual%)": 2.13143819777204}, {"Year": 2011, "Country Code": "GBR", "GDP growth (annual%)": 1.4575633909042}, {"Year": 2012, "Country Code": "GBR", "GDP growth (annual%)": 1.46988752075868}, {"Year": 2013, "Country Code": "GBR", "GDP growth (annual%)": 1.8900183424514}, {"Year": 2014, "Country Code": "GBR", "GDP growth (annual%)": 2.99116481375781}, {"Year": 2015, "Country Code": "GBR", "GDP growth (annual%)": 2.62259667901294}, {"Year": 2016, "Country Code": "GBR", "GDP growth (annual%)": 2.26346353784494}, {"Year": 2017, "Country Code": "GBR", "GDP growth (annual%)": 2.13445309331686}, {"Year": 2018, "Country Code": "GBR", "GDP growth (annual%)": 1.65092549602133}, {"Year": 2019, "Country Code": "GBR", "GDP growth (annual%)": 1.67194419724758}, {"Year": 2020, "Country Code": "GBR", "GDP growth (annual%)": -9.27041083453351}, {"Year": 2021, "Country Code": "GBR", "GDP growth (annual%)": 7.44127309273938}, {"Year": 1961, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 4.980111849}, {"Year": 1962, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 6.843469985}, {"Year": 1963, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 6.233679952}, {"Year": 1964, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 6.652099508}, {"Year": 1965, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 4.861507696}, {"Year": 1966, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 5.251837046}, {"Year": 1967, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 4.921148915}, {"Year": 1968, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 4.491308886}, {"Year": 1969, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 7.109475345}, {"Year": 1970, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 6.108679813}, {"Year": 1971, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 5.316715897}, {"Year": 1972, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 4.511374019}, {"Year": 1973, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 6.344580675}, {"Year": 1974, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 4.300919143}, {"Year": 1975, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": -0.959884746}, {"Year": 1976, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 4.356758903}, {"Year": 1977, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 3.464312004}, {"Year": 1978, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 3.978543722}, {"Year": 1979, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 3.549989157}, {"Year": 1980, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 1.57874526}, {"Year": 1981, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 1.069019839}, {"Year": 1982, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 2.505396616}, {"Year": 1983, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 1.240864862}, {"Year": 1984, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 1.513721603}, {"Year": 1985, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 1.622781367}, {"Year": 1986, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 2.33727635}, {"Year": 1987, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 2.561900335}, {"Year": 1988, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 4.743142194}, {"Year": 1989, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 4.343861063}, {"Year": 1990, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 2.923935081}, {"Year": 1991, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 1.048175847}, {"Year": 1992, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 1.599342677}, {"Year": 1993, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": -0.628666352}, {"Year": 1994, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 2.358342181}, {"Year": 1995, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 2.106695253}, {"Year": 1996, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 1.412993673}, {"Year": 1997, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 2.336296529}, {"Year": 1998, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 3.588659425}, {"Year": 1999, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 3.421373799}, {"Year": 2000, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 3.923669227}, {"Year": 2001, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 1.983721419}, {"Year": 2002, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 1.135531482}, {"Year": 2003, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 0.823160757}, {"Year": 2004, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 2.829752929}, {"Year": 2005, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 1.66321998}, {"Year": 2006, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 2.449323601}, {"Year": 2007, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 2.424736243}, {"Year": 2008, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 0.25494596}, {"Year": 2009, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": -2.873313828}, {"Year": 2010, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 1.949437623}, {"Year": 2011, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 2.192700633}, {"Year": 2012, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 0.313134751}, {"Year": 2013, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 0.576326675}, {"Year": 2014, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 0.956183052}, {"Year": 2015, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 1.112912341}, {"Year": 2016, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 1.095464404}, {"Year": 2017, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 2.291419994}, {"Year": 2018, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 1.865066071}, {"Year": 2019, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 1.842971814}, {"Year": 2020, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": -7.855256037}, {"Year": 2021, "Country Code": "FRA", "Country Name": "France", "GDP growth (annual%)": 6.963570788}
+      ]
+    }
+  ],
+
+  "scales": [
+    {
+      "name": "x",
+      "type": "point",
+      "range": "width",
+      "domain": {"data": "table", "field": "Year"}
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "range": "height",
+      "nice": true,
+      "zero": true,
+      "domain": {"data": "table", "field": "GDP growth (annual%)"}
+    },
+
+    {
+      "name": "color",
+      "type": "ordinal",
+      "range": "category",
+      "domain": {"data": "table", "field": "Country Code"}
+    }
+  ],
+
+  "axes": [
+    {"orient": "bottom", "scale": "x", "tickCount": 10, "tickMinStep": 10 },
+    {"orient": "left", "scale": "y"}
+  ],
+
+  "marks": [
+    {
+      "type": "group",
+      "from": {
+        "facet": {
+          "name": "series",
+          "data": "table",
+          "groupby": "Country Code"
+        }
+      },
+      "marks": [
+        {
+          "type": "line",
+          "from": {"data": "series"},
+          "encode": {
+            "enter": {
+              "x": {"scale": "x", "field": "Year"},
+              "y": {"scale": "y", "field": "GDP growth (annual%)"},
+              "tooltip":{"field": "Country Code", "type": "point"},
+              "stroke": {"scale": "color", "field": "Country Code"},
+              "strokeWidth": {"value": 2}
+            },
+            "update": {
+              "interpolate": {"signal": "interpolate"},
+              "strokeOpacity": {"value": 0.9},
+              "strokeWidth": {"value": 2}
+            },
+            "hover": {
+              "strokeOpacity": {"value": 1},
+              "strokeWidth": {"value": 3}
+          }
+        }
+        }
+      ]
+    }
+  ]
+}
