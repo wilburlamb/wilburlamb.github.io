@@ -14,7 +14,7 @@
     },
     
     "data": {
-      "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/asia-with-country-outlines_.geojson",
+      "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/AsiaMap.json",
       "format": {"property": "features"}
     },
   
@@ -23,7 +23,7 @@
     "from": {
       "key": "name",
       "fields": ["population"],
-      "data": {"url": "https://raw.githubusercontent.com/ajturner/acetate/master/places/Countries-Asia.csv"}}}],
+      "data": {"url":"https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/AsiaPop.csv"}}}],
   
     "projection": {"type": "equalEarth"},
     "mark": "geoshape", 
