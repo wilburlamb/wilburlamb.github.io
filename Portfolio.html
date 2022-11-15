@@ -94,10 +94,23 @@
     </div> 
 
     <div class="myWeek5">
-        <h1>UK Dashboard - Taxes on Production</h1>
-        <div class="chart" id="chart8"></div><div class="chart" id="chart9"></div><div class="chart" id="chart10"></div>
-        <div class="chart" id="chart11"></div><div class="chart" id="chart12"></div><div class="chart" id="chart13"></div>
-        <div class="chart" id="chart14"></div><div class="chart" id="chart15"></div><div class="chart" id="chart16"></div>
+        <h1>UK Dashboard - Taxes on Production - Week 5</h1>
+        <div class = 'grid_items'>
+            <div class="grid_item" id="chart8"></div><div class="grid_item" id="chart9"></div><div class="grid_item" id="chart10"></div>
+            <div class="grid_item" id="chart11"></div><div class="grid_item" id="chart12"></div><div class="grid_item" id="chart13"></div>
+            <div class="grid_item" id="chart14"></div><div class="grid_item" id="chart15"></div><div class="grid_item" id="chart16"></div>
+            <a href="https://colab.research.google.com/drive/1IC969z1fJeduYxML3KTie0qxZa7vPsVd#scrollTo=LrBK0dnaTCcd" class="link" id="link5">CoLab2  </a>
+        </div>
+    </div> 
+
+    <div class="myWeek7">
+        <h1>Maps - Week 7</h1>
+        
+        <h3>Map of Asia</h3>
+        <div class="chart" id="chart17"></div>
+
+        <h3>Cloropleth Map of Asian Population</h3>
+        <div class="chart" id="chart18"></div>
     </div> 
 </body>
 
@@ -121,7 +134,9 @@
     var myChart14 = "Tax_StampDuty(shares).json";
     var myChart15 = "Tax_StampDuty(land).json";
     var myChart16 = "Tax_Vehicle.json";
-    
+    var myChart17 = "Asia.json";
+    var myChart18 = "AsiaPopulation.json";
+
     // Embed charts:
     vegaEmbed('#chart1', myChart1);
     vegaEmbed('#chart2', myChart2);
@@ -139,6 +154,8 @@
     vegaEmbed('#chart14', myChart14);
     vegaEmbed('#chart15', myChart15);
     vegaEmbed('#chart16', myChart16);
+    vegaEmbed('#chart17', myChart17);
+    vegaEmbed('#chart18', myChart18);
 </script>
 
 </html>

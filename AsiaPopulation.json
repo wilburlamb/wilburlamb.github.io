@@ -1,0 +1,46 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "width": 500,
+    "height": 300,
+    "view": {"stroke": "transparent"},
+  
+     "title": {
+      "text": "Population of Asian Countries",
+      "fontSize": 12,
+      "subtitle":["", ""],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10, "anchor": "middle"
+    },
+    
+    "data": {
+      "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/asia-with-country-outlines_.geojson",
+      "format": {"property": "features"}
+    },
+  
+    "transform": [{
+    "lookup": "properties.name",
+    "from": {
+      "key": "name",
+      "fields": ["population"],
+      "data": {"url": "https://raw.githubusercontent.com/ajturner/acetate/master/places/Countries-Asia.csv"}}}],
+  
+    "projection": {"type": "equalEarth"},
+    "mark": "geoshape", 
+  
+    "encoding":{
+      "color":{
+        "field":"population",
+        "legend":{
+          "title": null,
+          "orient": "right",
+          "direction": "vertical"},
+          "type": "quantitative",
+          "scale":{
+            "scheme":"tealblues",
+            "reverse": false}},
+      "tooltip":[
+        {"field":"properties.name", "title": "Country"},
+        {"field":"population", "title": "Population", "format": ",d"}
+      ]
+    }}

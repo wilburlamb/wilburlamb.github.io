@@ -126,6 +126,118 @@ h1, h3, p{
     border-radius: 50px;
     border-color: rgb(255, 255, 255);
 }
+.grid_items {
+    padding: 2px;
+    display: grid;
+    grid-template-columns: 100%;
+    max-width: 800px; 
+    margin: 0 auto 0 auto !important;
+    padding: 0 5 0 5; 
+    grid-column-gap: 5px;
+    grid-row-gap: 20px;
+  }
+  .grid_items > div {
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    width: 360px;
+    margin:auto;
+  }
+  .grid_items > div:nth-child(3n + 2) {
+    background-color: #ffffff;
+  }
+  .grid_items > div:nth-child(3n) {
+    background-color: #ffffff;
+  }
+
+/* One column*/
+@media only screen and (min-width: 250px) {
+    .grid_items {
+      grid-template-columns: 100%;
+      max-width: 420px; 
+      margin: 0 auto 0 auto !important;
+      padding: 0 5 0 5; 
+      grid-column-gap: 10px;
+      grid-row-gap: 40px;
+      text-align: center;
+    }
+  
+    .wrap {
+      grid-template-columns: 100%;
+      max-width: 360px; 
+      margin: 0 auto 0 auto !important;
+        padding: 0 5 0 5; 
+      grid-column-gap: 10px;
+      grid-row-gap: 40px;
+      text-align: center;
+    }
+    .grid_items > div {
+      padding: 10px;
+    }
+    .rubric {
+      text-align: left;
+    }
+  
+  
+  }
+  
+  /* Two columns*/
+  @media only screen and (min-width: 900px) {
+    .grid_items, .wrap {
+      grid-template-columns: 47.5% 47.5%;
+      max-width: 880px; 
+      margin: 0 auto 0 auto !important;
+      padding: 0 5 0 5; 
+      grid-column-gap: 10px;
+      grid-row-gap: 40px;
+      text-align: left;
+    }
+    .grid_items > div {
+      padding: 10px;
+    }
+  }
+ 
+  /* Three columns*/
+  @media only screen and (min-width: 1400px) {
+    .grid_items, .wrap {
+      grid-template-columns: 30% 30% 30%;
+      max-width: 1400px; 
+      margin: 0 auto 0 auto !important;
+      padding: 0 5 0 5; 
+      grid-column-gap: 20px;
+      grid-row-gap: 50px;
+    }
+    
+    .grid_items > div {
+      padding: 10px;
+    }
+  }
+   
+  /* Four columns*/
+  @media only screen and (min-width: 1800px) {
+    .grid_items, .wrap {
+      grid-template-columns: 25% 25% 25% 25%;
+      max-width: 1900px; 
+      margin: 0 auto 0 auto !important;
+      padding: 0 5 0 5; 
+      grid-column-gap: 20px;
+      grid-row-gap: 50px;
+    }
+    .grid_items > div {
+      padding: 10px;
+    }
+  }
+.myWeek7{
+    margin: auto;
+    max-width: 800px;
+    background-color: rgb(20, 55, 77);
+
+      
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: rgb(255, 255, 255);
+}
 /* Set the apperance of the class, chart */
 .chart{
     background-color: white;
@@ -138,11 +250,8 @@ h1, h3, p{
     align-items: center;
     justify-content: center;
     align-content: center;
-    margin: auto;
-
+    margin: auto; 
 }
-
-    
 
 /* Set the apperance for a particular chart */
 #chart3{
@@ -166,19 +275,28 @@ h1, h3, p{
 }
 #chart9{
     width:230px
-}#chart10{
+}
+#chart10{
     width:230px
-}#chart11{
+}
+#chart11{
     width:230px
-}#chart12{
+}
+#chart12{
     width:230px
-}#chart13{
+}
+#chart13{
     width:230px
-}#chart14{
+}
+#chart14{
     width:230px
 }
 #chart15{
     width:230px
-}#chart16{
+}
+#chart16{
     width:230px
+}
+#chart17{
+    width:500px
 }

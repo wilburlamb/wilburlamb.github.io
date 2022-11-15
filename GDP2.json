@@ -90,8 +90,7 @@
               "enter": {
                 "x": {"scale": "x", "field": "Year"},
                 "y": {"scale": "y", "field": "GDP growth (annual%)"},
-                "tooltip":
-                  {"field": "Country Name", "type": "point"},
+                "tooltip": {"field": "Country Name", "type": "point"},
                 "stroke": {"scale": "color", "field": "Country Name"},
                 "strokeWidth": {"value": 2}
               },

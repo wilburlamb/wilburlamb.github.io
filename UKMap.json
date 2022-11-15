@@ -1,0 +1,36 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "Map of UK ITL3 Regions",
+
+  "title": {
+    "text": "United Kingdom",
+    "subtitle":["ITL3 regions, Mercator Projection",""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "middle",
+    "color": "black"},
+
+  "config": {
+      "background":"white",
+      "view": {"stroke": "transparent"}},
+  
+  "width": 260,
+  "height": 500,
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/UK%20Map%20Data/ITL3_2021_20m.geojson",
+        "format": {"property": "features"}},
+
+  "projection": {"type": "mercator"},
+  
+  "mark": {
+      "type": "geoshape",
+      "fill": "lightblue",
+      "stroke": "black",
+      "strokeWidth":0.5},
+
+  "encoding": {
+    "tooltip": 
+      {"field": "properties.ITL321NM"}
+  }
+}

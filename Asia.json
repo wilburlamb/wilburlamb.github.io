@@ -1,0 +1,25 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 300,
+    "title": {
+      "text": "Asia Map",
+      "subtitle":["Equal Earth Projection"],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "subtitlePadding":5,
+      "anchor": "middle",
+      "color": "black"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/asia-with-country-outlines_.geojson",
+      "format": {"property": "features"}
+    },
+    "projection": {"type": "equalEarth"},
+    "mark": {
+        "type": "geoshape",
+        "fill": "teal",
+        "stroke": "white",
+        "strokeWidth":0.5},
+    "encoding": {"tooltip":{"field":"properties.name"}}
+  }
