@@ -1,5 +1,5 @@
 zoom,name,abbreviation,ISO alpha 2,ISO alpha 3,ISO numeric,land area km,population,latitude,longitude,continent
-3,Russia,Rus.,RU,RUS,643,17100000,140702000,62.43,87.54,eu
+3,Russia (Russian Federation),Rus.,RU,RUS,643,17100000,140702000,62.43,87.54,eu
 3,China,China,CN,CHN,156,9596960,1330044000,35.00,105.00,asia
 3,India,India,IN,IND,356,3287590,1173108018,20.00,77.00,asia
 3,Kazakhstan,Kaz.,KZ,KAZ,398,2717300,15340000,48.00,68.00,asia
@@ -24,8 +24,8 @@ zoom,name,abbreviation,ISO alpha 2,ISO alpha 3,ISO numeric,land area km,populati
 3,Syria,Syria,SY,SYR,760,185180,22198110,35.00,38.00,asia
 3,Bangladesh,Bngl.,BD,BGD,50,144000,156118464,24.00,90.00,asia
 3,Nepal,Nepal,NP,NPL,524,140800,28951852,28.00,84.00,asia
-3,N. Korea,N. Kor.,KP,PRK,408,120540,22912177,40.00,127.00,asia
-3,S. Korea,S. Kor.,KR,KOR,410,98480,48422644,37.00,127.50,asia
+3,North Korea (Democratic People's Republic of Korea),N. Kor.,KP,PRK,408,120540,22912177,40.00,127.00,asia
+3,South Korea (Republic of Korea),S. Kor.,KR,KOR,410,98480,48422644,37.00,127.50,asia
 3,Azerbaijan,Azer.,AZ,AZE,31,86600,8303512,40.50,47.50,asia
 3,United Arab Emirates,U.A.E.,AE,ARE,784,82880,4975593,24.00,54.00,asia
 3,Sri Lanka,Sri L.,LK,LKA,144,65610,21513990,7.00,81.00,asia
@@ -35,7 +35,7 @@ zoom,name,abbreviation,ISO alpha 2,ISO alpha 3,ISO numeric,land area km,populati
 3,Micronesia,Micron.,FM,FSM,583,702,108105,5.00,152.00,ocean
 3,Marshall Is.,Marsh. Is.,MH,MHL,584,181.3,65859,10.00,167.00,ocean
 4,Uzbekistan,Uzb.,UZ,UZB,860,447400,27865738,41.00,64.00,asia
-4,Laos,Laos,LA,LAO,418,236800,6368162,18.00,105.00,asia
+4,Laos (Lao People's Democratic Republic),Laos,LA,LAO,418,236800,6368162,18.00,105.00,asia
 4,Cambodia,Camb.,KH,KHM,116,181040,14453680,13.00,105.00,asia
 4,Tajikistan,Taj.,TJ,TJK,762,143100,7487489,39.00,71.00,asia
 4,Jordan,Jord.,JO,JOR,400,92300,6407085,31.00,36.00,asia
