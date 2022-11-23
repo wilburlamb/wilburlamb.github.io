@@ -1,0 +1,29 @@
+country_code,id,utc_created,utc_updated,country,indicator_code,indicator,value,year
+AUS,23,10:52.7,10:52.7,Australia,68606,"GII: Gender Inequality Index, value",0.199,1995
+AUS,24,10:52.7,10:52.7,Australia,68606,"GII: Gender Inequality Index, value",0.158,2000
+AUS,25,10:52.7,10:52.7,Australia,68606,"GII: Gender Inequality Index, value",0.139,2005
+AUS,26,10:52.7,10:52.7,Australia,68606,"GII: Gender Inequality Index, value",0.134,2010
+AUS,27,10:52.7,10:52.7,Australia,68606,"GII: Gender Inequality Index, value",0.113,2013
+BRA,72,10:52.7,10:52.7,Brazil,68606,"GII: Gender Inequality Index, value",0.517,1995
+BRA,73,10:52.7,10:52.7,Brazil,68606,"GII: Gender Inequality Index, value",0.515,2000
+BRA,74,10:52.7,10:52.7,Brazil,68606,"GII: Gender Inequality Index, value",0.473,2005
+BRA,75,10:52.7,10:52.7,Brazil,68606,"GII: Gender Inequality Index, value",0.446,2010
+BRA,76,10:52.7,10:52.7,Brazil,68606,"GII: Gender Inequality Index, value",0.441,2013
+CHN,105,10:52.7,10:52.7,China,68606,"GII: Gender Inequality Index, value",0.252,1995
+CHN,106,10:52.7,10:52.7,China,68606,"GII: Gender Inequality Index, value",0.572,2000
+CHN,107,10:52.7,10:52.7,China,68606,"GII: Gender Inequality Index, value",0.219,2005
+CHN,108,10:52.7,10:52.7,China,68606,"GII: Gender Inequality Index, value",0.209,2010
+CHN,109,10:52.7,10:52.7,China,68606,"GII: Gender Inequality Index, value",0.202,2013
+EGY,170,10:52.7,10:52.7,Egypt,68606,"GII: Gender Inequality Index, value",0.692,1995
+EGY,171,10:52.7,10:52.7,Egypt,68606,"GII: Gender Inequality Index, value",0.66,2000
+EGY,172,10:52.7,10:52.7,Egypt,68606,"GII: Gender Inequality Index, value",0.604,2005
+EGY,173,10:52.7,10:52.7,Egypt,68606,"GII: Gender Inequality Index, value",0.58,2013
+GBR,200,10:52.7,10:52.7,United Kingdom,68606,"GII: Gender Inequality Index, value",0.242,1995
+GBR,201,10:52.7,10:52.7,United Kingdom,68606,"GII: Gender Inequality Index, value",0.228,2000
+GBR,202,10:52.7,10:52.7,United Kingdom,68606,"GII: Gender Inequality Index, value",0.216,2005
+GBR,203,10:52.7,10:52.7,United Kingdom,68606,"GII: Gender Inequality Index, value",0.197,2010
+GBR,204,10:52.7,10:52.7,United Kingdom,68606,"GII: Gender Inequality Index, value",0.193,2013
+USA,600,10:52.7,10:52.7,United States,68606,"GII: Gender Inequality Index, value",0.303,1995
+USA,601,10:52.7,10:52.7,United States,68606,"GII: Gender Inequality Index, value",0.288,2005
+USA,602,10:52.7,10:52.7,United States,68606,"GII: Gender Inequality Index, value",0.285,2010
+USA,603,10:52.7,10:52.7,United States,68606,"GII: Gender Inequality Index, value",0.262,2013
