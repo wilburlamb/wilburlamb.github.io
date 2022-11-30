@@ -1,0 +1,50 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "title": {
+      "text": "Trade",
+      "subtitle":"as a percentage of GDP",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"},
+  
+    
+    "data": {
+      "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/TRADE6.csv",
+      "format": {"type": "csv"}
+    },
+   
+    "height": 300,
+    "width": 300,
+   
+    "mark": {"type": "line", "point": false},
+    
+    "encoding": {
+      
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "title": null,
+        "axis": {"grid": true}},
+   
+      "y": {
+        "field": "Trade (% of GDP)",
+        "type": "quantitative",
+        "title": null,
+        "axis": {"grid": true}},
+  
+      "color": {
+        "field": "Country Name",
+        "type": "nominal",
+        "scale": {"scheme": "darkblue"},
+        "title": null,
+        "legend": {"orient": "top-left"} },
+
+  
+      "tooltip": [{"field": "Country Name", "type": "nominal"},
+      {"field":"Trade (% of GDP)", "type": "quantitative"},
+      {"field": "Year", "type":"temporal"}]
+   
+     }
+  }

@@ -1,0 +1,56 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Sugar 4b",
+      "title": {
+        "text": "Cost of Hosting World Cup",
+        "subtitle": ["Money spent by host nation on hosting the World Cup (bars)",
+        "Percentage of Host Nations Annual GDP in year of World Cup (line)",
+        "Current (USD$)",
+        "Sources: Wikipedia and World Bank"],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"},
+    "width": 350,
+    "height": 350,
+    "data": {
+      "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/WORLDCUPCOSTSANDGDPNOQAT.csv"
+    },
+    "encoding": {
+      "x": {
+        "field": "Host Nation",
+        "type": "nominal",
+        "sort": ["0"],
+        "title": "Year",
+        "axis": {"labelAngle": 60, "labelFontSize":10}
+      },
+      "tooltip": [{"field": "Year", "title": "Year"}, {"field": "General Cost", "title": "Cost ($ billions)"},
+      {"field": "GDP", "title": "GDP ($ billions)"}, {"field": "%ofGDP", "title": "Percent of GDP"}]
+    },
+    "layer": [
+      {
+        "mark": {"opacity": 0.5, "type": "bar", "color": "#d7ed0e"},
+        "encoding": {
+          "y": {
+            "field": "General Cost",
+            "type": "quantitative",
+            "scale": {"domain": [0, 20]},
+            "title": "Cost of Hosting World Cup",
+            "axis": {"titleColor": "#a5b702"}
+          }
+        }
+      },
+      {
+        "mark": {"stroke": "#30cf5f", "type": "line", "interpolate": "monotone"},
+        "encoding": {
+          "y": {
+            "field": "%ofGDP",
+            "type": "quantitative",
+            "title": "Percentage of Host Countries GDP",
+            "axis": {"titleColor": "#30cf5f"}
+          }
+        }
+      }
+    ],
+    "resolve": {"scale": {"y": "independent"}}
+  }

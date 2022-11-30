@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+    background-color: rgb(196, 223, 106);
+        background-size: cover;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+.link{
+    background-color: rgba(132, 180, 230, 0.5);
+
+    padding:10px;
+    
+    border:2px;
+    border-color:grey;
+    border-style: solid;
+    border-radius: 10px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:700;
+    color:white;
+    text-decoration: none;
+}
+.wrap{
+    display: block;
+    margin: auto;
+   }
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    border: 5px;
+    border-color: black;
+    border-style: solid;
+    margin: auto;
+}
+
+.link:hover{
+
+    background-color: rgba(142, 235, 127, 0.821);
+
+    border:2px;
+    border-color:rgb(0, 0, 0);
+    border-style: solid;
+    
+}
+
+h1, h3, p{
+    color:rgb(0, 0, 0);
+    font-family: 'Noto Sans Mono', sans-serif;
+    text-align: center;
+}
+.chart{
+    background-color: white;
+    width:372px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 2px;
+    border-color: rgb(113, 141, 58);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: auto; 
+}
+    

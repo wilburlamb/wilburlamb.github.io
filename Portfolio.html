@@ -66,15 +66,18 @@
     </div> 
     
     <div class="myWeek3">
-        <h1>Gross Domestic Product - Week 3</h1>
+        <h1>Trade - Week 3</h1>
         
-        <h3>GDP</h3>
-        <p>The growth rate of UK and France GDP, 1960 - 2021 (% annual)</p>
+        <h3>Trade</h3>
+        <p>Trade as a percetnage of GDP, 6 select countries</p>
         <div class="chart" id="chart5"></div>
 
-        <h3>GDP</h3>
-        <p>The growth rate of UK and France GDP, 1960 - 2021 (% annual)</p>
+        <h3>Trade</h3>
+        <p>Improved chart</p>
         <div class="chart" id="chart6"></div>
+
+        <h3>Analysis</h3>
+        <p> No vertical gridlines, colour scheme change, and movement of ledgend, all contribute to the second chart being more readable and attractive.
         </p>
     </div> 
 
@@ -111,6 +114,37 @@
 
         <h3>Cloropleth Map of Asian Population</h3>
         <div class="chart" id="chart18"></div>
+
+        <h3>Analysis</h3>
+        <p> My cloropleth map shows the population of different Asian countries - the darker the shade the greater the population of the country. 
+        </p>
+    </div> 
+
+    <div class="myWeek8">
+        <h1>Week 8 - Festival of Economics</h1>
+
+        <h3>Is Crypto a bubble? Has the bubble popped?</h3>
+        <p> Arguement: There was a bubble in the crypto market in 2021, which has now burst.
+        </p>
+        <h3>Bitcoin</h3>
+        <div class="chart" id="chart19"></div>
+
+        <h3>Ethereum</h3>
+        <div class="chart" id="chart20"></div>     
+
+        <h3>Analysis</h3>
+        <p> Bitcoin and Ethereum, two of the biggest Cryptocurrencies, both experienced a rapid rise and fall in price 2021-2022. This is evidence of a bubble.
+        </p>
+    </div> 
+
+    
+    <div class="myWeek9">
+        <h1>Week 9 - Advanced Charts</h1>
+
+        <h3>UK Singles Charts</h3>
+        <p>Week starting 21st Nov 2022</p>
+        <div class="chart" id="chart21"></div>
+
     </div> 
 </body>
 
@@ -122,8 +156,8 @@
     var myChart2 = "chartFootball2.json";
     var myChart3 = "IMF.json";
     var myChart4 = "IMF2.json";
-    var myChart5 = "GDP.json";
-    var myChart6 = "GDP2.json";
+    var myChart5 = "TradeLine.json";
+    var myChart6 = "TradeLine1.json";
     var myChart7 = "Transfers.json";
     var myChart8 = "Tax_total.json";
     var myChart9 = "Tax_VAT.json";
@@ -136,6 +170,9 @@
     var myChart16 = "Tax_Vehicle.json";
     var myChart17 = "Asia.json";
     var myChart18 = "AsiaPopulation.json";
+    var myChart19 = "BTC.json";
+    var myChart20 = "ETH.json";
+    var myChart21 = "Charts1.json";
 
     // Embed charts:
     vegaEmbed('#chart1', myChart1);
@@ -156,6 +193,9 @@
     vegaEmbed('#chart16', myChart16);
     vegaEmbed('#chart17', myChart17);
     vegaEmbed('#chart18', myChart18);
+    vegaEmbed('#chart19', myChart19);
+    vegaEmbed('#chart20', myChart20);
+    vegaEmbed('#chart21', myChart21);
 </script>
 
 </html>

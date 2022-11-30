@@ -1,13 +1,6 @@
-/* Richard Davies, Data Science for Economists */
 
-/* This is my first proper css file */
-
-
-/* Import a font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-
-/* Set the background color for my page: */
 body{
     background-color: rgb(139, 177, 167);
         background-size: cover;
@@ -17,13 +10,6 @@ body{
         flex-direction: column;
         min-height: 100vh;
       }
-
-
-/* Choose the appearance of the tags, h1, h3 and p: */
-
-
-
-/* BUTTONS */
 
 .link{
     background-color: rgba(132, 180, 230, 0.5);
@@ -118,7 +104,7 @@ h1, h3, p{
 .myWeek5{
     margin: auto;
     max-width: 800px;
-    background-color: rgb(21, 31, 37);
+    background-color: rgb(31, 52, 65);
 
       
     border-width: 5px;
@@ -230,13 +216,35 @@ h1, h3, p{
 .myWeek7{
     margin: auto;
     max-width: 800px;
-    background-color: rgb(20, 55, 77);
+    background-color: rgb(21, 59, 83);
 
       
     border-width: 5px;
     border-style: solid;
     border-radius: 50px;
     border-color: rgb(255, 255, 255);
+}
+.myWeek8{
+  margin: auto;
+  max-width: 800px;
+  background-color: rgb(59, 107, 138);
+
+    
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 50px;
+  border-color: rgb(255, 255, 255);
+}
+.myWeek9{
+  margin: auto;
+  max-width: 800px;
+  background-color: rgb(95, 149, 183);
+
+    
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 50px;
+  border-color: rgb(255, 255, 255);
 }
 /* Set the apperance of the class, chart */
 .chart{
@@ -261,11 +269,11 @@ h1, h3, p{
     width: 350px;
 }
 #chart5{ 
-    width: 550px;
+    width: 350px;
 
 }
 #chart6{ 
-    width: 550px;
+    width: 500px;
 }
 #chart7{
     width: 580px;

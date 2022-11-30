@@ -1,0 +1,95 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "description": "A basic scatter plot example depicting automobile statistics.",
+    "width": 200,
+    "height": 200,
+    "padding": 5,
+  
+    "data": [
+      {
+        "name": "source",
+        "values": [{"currentPosition":"1","lastWeekPosition":"1","title":"ANTI-HERO","artist":"TAYLOR SWIFT","label":"EMI","peakPosition":"1","weeksOnChart":"4"},{"currentPosition":"2","lastWeekPosition":"2","title":"UNHOLY","artist":"SAM SMITH & KIM PETRAS","label":"EMI","peakPosition":"1","weeksOnChart":"8"},{"currentPosition":"3","lastWeekPosition":"4","title":"MISS YOU","artist":"OLIVER TREE & ROBIN SCHULZ","label":"ATLANTIC","peakPosition":"3","weeksOnChart":"6"},{"currentPosition":"4","lastWeekPosition":"8","title":"MADE YOU LOOK","artist":"MEGHAN TRAINOR","label":"EPIC","peakPosition":"4","weeksOnChart":"4"},{"currentPosition":"5","lastWeekPosition":"9","title":"MESSY IN HEAVEN","artist":"VENBEE & GODDARD","label":"COLUMBIA","peakPosition":"5","weeksOnChart":"8"},{"currentPosition":"6","lastWeekPosition":"3","title":"RICH FLEX","artist":"DRAKE & 21 SAVAGE","label":"OVO/REPUBLIC RECORDS","peakPosition":"3","weeksOnChart":"2"},{"currentPosition":"7","lastWeekPosition":"14","title":"PSYCHO","artist":"ANNE-MARIE & AITCH","label":"ATLANTIC","peakPosition":"6","weeksOnChart":"9"},{"currentPosition":"8","lastWeekPosition":"10","title":"HIDE & SEEK","artist":"STORMZY","label":"DEF JAM","peakPosition":"7","weeksOnChart":"5"},{"currentPosition":"9","lastWeekPosition":"12","title":"LIFT ME UP","artist":"RIHANNA","label":"DEF JAM","peakPosition":"3","weeksOnChart":"3"},{"currentPosition":"10","lastWeekPosition":"16","title":"CALM DOWN","artist":"REMA","label":"MAVIN","peakPosition":"10","weeksOnChart":"12"},{"currentPosition":"11","lastWeekPosition":"11","title":"LAVENDER HAZE","artist":"TAYLOR SWIFT","label":"EMI","peakPosition":"3","weeksOnChart":"4"},{"currentPosition":"12","lastWeekPosition":"17","title":"ANOTHER LOVE","artist":"TOM ODELL","label":"COLUMBIA","peakPosition":"10","weeksOnChart":"70"},{"currentPosition":"13","lastWeekPosition":"19","title":"I'M GOOD (BLUE)","artist":"DAVID GUETTA & BEBE REXHA","label":"PARLOPHONE","peakPosition":"1","weeksOnChart":"12"},{"currentPosition":"14","lastWeekPosition":"15","title":"SNOW ON THE BEACH","artist":"TAYLOR SWIFT FT LANA DEL REY","label":"EMI","peakPosition":"4","weeksOnChart":"4"},{"currentPosition":"15","lastWeekPosition":"20","title":"CELESTIAL","artist":"ED SHEERAN","label":"ASYLUM","peakPosition":"6","weeksOnChart":"7"},{"currentPosition":"16","lastWeekPosition":"6","title":"FORGET ME","artist":"LEWIS CAPALDI","label":"VERTIGO","peakPosition":"1","weeksOnChart":"10"},{"currentPosition":"17","lastWeekPosition":"18","title":"WARM","artist":"K-TRAP","label":"THOUSAND8","peakPosition":"17","weeksOnChart":"7"},{"currentPosition":"18","lastWeekPosition":"New","title":"OUT OF NOWHERE","artist":"BUGZY MALONE & TEEDEE","label":"BSOMEBODY","peakPosition":"18","weeksOnChart":"1"},{"currentPosition":"19","lastWeekPosition":"23","title":"ALL FOR YOU","artist":"CIAN DUCROT","label":"POLYDOR","peakPosition":"19","weeksOnChart":"27"},{"currentPosition":"20","lastWeekPosition":"7","title":"CIRCO LOCO","artist":"DRAKE & 21 SAVAGE","label":"OVO/REPUBLIC RECORDS","peakPosition":"7","weeksOnChart":"2"},{"currentPosition":"21","lastWeekPosition":"25","title":"KISS ME","artist":"DERMOT KENNEDY","label":"ISLAND","peakPosition":"21","weeksOnChart":"11"},{"currentPosition":"22","lastWeekPosition":"21","title":"SHIRT","artist":"SZA","label":"RCA/TOP DAWG","peakPosition":"17","weeksOnChart":"3"},{"currentPosition":"23","lastWeekPosition":"5","title":"MAJOR DISTRIBUTION","artist":"DRAKE & 21 SAVAGE","label":"OVO/REPUBLIC RECORDS","peakPosition":"5","weeksOnChart":"2"},{"currentPosition":"24","lastWeekPosition":"24","title":"HOW DO I SAY GOODBYE","artist":"DEAN LEWIS","label":"UNIVERSAL MUSIC AUSTRALIA","peakPosition":"23","weeksOnChart":"8"},{"currentPosition":"25","lastWeekPosition":"30","title":"LIONHEART (FEARLESS)","artist":"JOEL CORRY & TOM GRENNAN","label":"ATLANTIC","peakPosition":"25","weeksOnChart":"4"},{"currentPosition":"26","lastWeekPosition":"New","title":"FIREBABE","artist":"STORMZY","label":"0207/MERKY","peakPosition":"26","weeksOnChart":"1"},{"currentPosition":"27","lastWeekPosition":"27","title":"B.O.T.A. (BADDEST OF THEM ALL)","artist":"ELIZA ROSE/INTERPLANETARY","label":"WARNER RECORDS /  X ONE HOUSE","peakPosition":"1","weeksOnChart":"17"},{"currentPosition":"28","lastWeekPosition":"28","title":"GHOST OF YOU","artist":"MIMI WEBB","label":"EPIC","peakPosition":"23","weeksOnChart":"6"},{"currentPosition":"29","lastWeekPosition":"13","title":"CUFF IT","artist":"BEYONCE","label":"COLUMBIA/PARKWOOD ENT","peakPosition":"5","weeksOnChart":"16"},{"currentPosition":"30","lastWeekPosition":"29","title":"I AIN'T WORRIED","artist":"ONEREPUBLIC","label":"INTERSCOPE","peakPosition":"3","weeksOnChart":"25"},{"currentPosition":"31","lastWeekPosition":"31","title":"UNDER THE INFLUENCE","artist":"CHRIS BROWN","label":"RCA","peakPosition":"7","weeksOnChart":"17"},{"currentPosition":"32","lastWeekPosition":"New","title":"ALONE","artist":"BURNA BOY","label":"DEF JAM/HOLLYWOOD/ROC NATION","peakPosition":"32","weeksOnChart":"1"},{"currentPosition":"33","lastWeekPosition":"37","title":"AS IT WAS","artist":"HARRY STYLES","label":"COLUMBIA","peakPosition":"1","weeksOnChart":"33"},{"currentPosition":"34","lastWeekPosition":"36","title":"BAD HABIT","artist":"STEVE LACY","label":"L-M/RCA","peakPosition":"8","weeksOnChart":"19"},{"currentPosition":"35","lastWeekPosition":"32","title":"MISS YOU","artist":"SOUTHSTAR","label":"B1/MINISTRY OF SOUND","peakPosition":"23","weeksOnChart":"6"},{"currentPosition":"36","lastWeekPosition":"56","title":"ALL I WANT FOR CHRISTMAS IS YOU","artist":"MARIAH CAREY","label":"COLUMBIA","peakPosition":"1","weeksOnChart":"117"},{"currentPosition":"37","lastWeekPosition":"34","title":"GLIMPSE OF US","artist":"JOJI","label":"WARNER RECORDS","peakPosition":"12","weeksOnChart":"16"},{"currentPosition":"38","lastWeekPosition":"48","title":"MOCKINGBIRD","artist":"EMINEM","label":"INTERSCOPE","peakPosition":"4","weeksOnChart":"16"},{"currentPosition":"39","lastWeekPosition":"60","title":"10:35","artist":"TIESTO & TATE MCRAE","label":"ATLANTIC/MINISTRY OF SOUND","peakPosition":"39","weeksOnChart":"2"},{"currentPosition":"40","lastWeekPosition":"44","title":"GOLDEN HOUR","artist":"JVKE","label":"JVKE","peakPosition":"40","weeksOnChart":"6"},{"currentPosition":"41","lastWeekPosition":"43","title":"VICTORIA'S SECRET","artist":"JAX","label":"ATLANTIC","peakPosition":"33","weeksOnChart":"15"},{"currentPosition":"42","lastWeekPosition":"71","title":"LAST CHRISTMAS","artist":"WHAM","label":"RCA","peakPosition":"1","weeksOnChart":"82"},{"currentPosition":"43","lastWeekPosition":"41","title":"AFRAID TO FEEL","artist":"LF SYSTEM","label":"WARNER RECORDS","peakPosition":"1","weeksOnChart":"25"},{"currentPosition":"44","lastWeekPosition":"42","title":"BIG CITY LIFE","artist":"LUUDE & MATTAFIX","label":"WARNER RECORDS","peakPosition":"8","weeksOnChart":"21"},{"currentPosition":"45","lastWeekPosition":"40","title":"ONE UP","artist":"CENTRAL CEE","label":"CENTRAL CEE","peakPosition":"17","weeksOnChart":"5"},{"currentPosition":"46","lastWeekPosition":"64","title":"MOVING ALL AROUND (JUMPIN')","artist":"SCHAK FT KIM ENGLISH","label":"MINISTRY OF SOUND","peakPosition":"46","weeksOnChart":"2"},{"currentPosition":"47","lastWeekPosition":"45","title":"MUSIC FOR A SUSHI RESTAURANT","artist":"HARRY STYLES","label":"COLUMBIA","peakPosition":"3","weeksOnChart":"14"},{"currentPosition":"48","lastWeekPosition":"49","title":"LAST LAST","artist":"BURNA BOY","label":"ATLANTIC","peakPosition":"4","weeksOnChart":"27"},{"currentPosition":"49","lastWeekPosition":"50","title":"STAR WALKIN'","artist":"LIL NAS X","label":"RCA","peakPosition":"40","weeksOnChart":"8"},{"currentPosition":"50","lastWeekPosition":"52","title":"JUST WANNA ROCK","artist":"LIL UZI VERT","label":"ATLANTIC","peakPosition":"50","weeksOnChart":"4"},{"currentPosition":"51","lastWeekPosition":"47","title":"SUPER FREAKY GIRL","artist":"NICKI MINAJ","label":"REPUBLIC RECORDS","peakPosition":"5","weeksOnChart":"14"},{"currentPosition":"52","lastWeekPosition":"22","title":"2 BE LOVED (AM I READY)","artist":"LIZZO","label":"ATLANTIC","peakPosition":"16","weeksOnChart":"18"},{"currentPosition":"53","lastWeekPosition":"92","title":"SHE'S NOT ANYONE","artist":"D-BLOCK EUROPE","label":"D-BLOCK EUROPE","peakPosition":"30","weeksOnChart":"8"},{"currentPosition":"54","lastWeekPosition":"New","title":"WORLD CUP","artist":"ISHOWSPEED","label":"WARNER RECORDS","peakPosition":"54","weeksOnChart":"1"},{"currentPosition":"55","lastWeekPosition":"51","title":"TURN ON THE LIGHTS AGAIN","artist":"FRED AGAIN/SWEDISH HOUSE MAFIA","label":"ATLANTIC","peakPosition":"27","weeksOnChart":"16"},{"currentPosition":"56","lastWeekPosition":"61","title":"SHIVERS","artist":"ED SHEERAN","label":"ASYLUM","peakPosition":"1","weeksOnChart":"62"},{"currentPosition":"57","lastWeekPosition":"58","title":"TV","artist":"BILLIE EILISH","label":"INTERSCOPE","peakPosition":"23","weeksOnChart":"12"},{"currentPosition":"58","lastWeekPosition":"59","title":"BAD HABITS","artist":"ED SHEERAN","label":"ASYLUM","peakPosition":"1","weeksOnChart":"69"},{"currentPosition":"59","lastWeekPosition":"38","title":"DELILAH (PULL ME OUT OF THIS)","artist":"FRED AGAIN","label":"ATLANTIC","peakPosition":"35","weeksOnChart":"4"},{"currentPosition":"60","lastWeekPosition":"55","title":"RUNNING UP THAT HILL","artist":"KATE BUSH","label":"FISH PEOPLE","peakPosition":"1","weeksOnChart":"42"},{"currentPosition":"61","lastWeekPosition":"81","title":"SWEET LIES","artist":"NATHAN DAWE & TALIA MAR","label":"ATLANTIC","peakPosition":"61","weeksOnChart":"3"},{"currentPosition":"62","lastWeekPosition":"53","title":"BONES","artist":"IMAGINE DRAGONS","label":"INTERSCOPE","peakPosition":"51","weeksOnChart":"13"},{"currentPosition":"63","lastWeekPosition":"54","title":"GREEN GREEN GRASS","artist":"GEORGE EZRA","label":"COLUMBIA","peakPosition":"3","weeksOnChart":"30"},{"currentPosition":"64","lastWeekPosition":"46","title":"NEVER GONNA NOT DANCE AGAIN","artist":"PINK","label":"RCA","peakPosition":"46","weeksOnChart":"2"},{"currentPosition":"65","lastWeekPosition":"26","title":"FOR MY HAND","artist":"BURNA BOY FT ED SHEERAN","label":"ATLANTIC","peakPosition":"18","weeksOnChart":"19"},{"currentPosition":"66","lastWeekPosition":"33","title":"I'M BACK","artist":"FREDO","label":"PG","peakPosition":"33","weeksOnChart":"2"},{"currentPosition":"67","lastWeekPosition":"39","title":"DIE FOR YOU","artist":"JOJI","label":"88RISING MUSIC","peakPosition":"39","weeksOnChart":"2"},{"currentPosition":"68","lastWeekPosition":"57","title":"EVERGREEN (YOU DIDN'T DESERVE ME AT ALL)","artist":"OMAR APOLLO","label":"WARNER RECORDS","peakPosition":"31","weeksOnChart":"8"},{"currentPosition":"69","lastWeekPosition":"77","title":"DIE FOR YOU","artist":"WEEKND","label":"REPUBLIC RECORDS/XO","peakPosition":"69","weeksOnChart":"3"},{"currentPosition":"70","lastWeekPosition":"New","title":"2 SUGAR","artist":"WIZKID FT AYRA STARR","label":"RCA/STARBOY","peakPosition":"70","weeksOnChart":"1"},{"currentPosition":"71","lastWeekPosition":"67","title":"ALL THESE NIGHTS","artist":"TOM GRENNAN","label":"INSANITY","peakPosition":"37","weeksOnChart":"15"},{"currentPosition":"72","lastWeekPosition":"66","title":"NOT OVER YET","artist":"KSI FT TOM GRENNAN","label":"ATLANTIC","peakPosition":"4","weeksOnChart":"15"},{"currentPosition":"73","lastWeekPosition":"76","title":"HEAT WAVES","artist":"GLASS ANIMALS","label":"POLYDOR","peakPosition":"5","weeksOnChart":"105"},{"currentPosition":"74","lastWeekPosition":"73","title":"DOJA","artist":"CENTRAL CEE","label":"CENTRAL CEE","peakPosition":"2","weeksOnChart":"17"},{"currentPosition":"75","lastWeekPosition":"New","title":"CON LA BRISA","artist":"FOUDEQUSH/LUDWIG GORANSSON","label":"DEF JAM/HOLLYWOOD/ROC NATION","peakPosition":"75","weeksOnChart":"1"},{"currentPosition":"76","lastWeekPosition":"63","title":"FERRARI","artist":"JAMES HYPE/MIGGY DELA ROSA","label":"ISLAND/THE CROSS RECORDS","peakPosition":"6","weeksOnChart":"23"},{"currentPosition":"77","lastWeekPosition":"62","title":"HOLD ME CLOSER","artist":"ELTON JOHN & BRITNEY SPEARS","label":"EMI/RCA","peakPosition":"3","weeksOnChart":"12"},{"currentPosition":"78","lastWeekPosition":"72","title":"UNTIL I FOUND YOU","artist":"STEPHEN SANCHEZ","label":"REPUBLIC RECORDS","peakPosition":"72","weeksOnChart":"12"},{"currentPosition":"79","lastWeekPosition":"74","title":"GO","artist":"CAT BURNS","label":"RCA/SINCE 93","peakPosition":"2","weeksOnChart":"44"},{"currentPosition":"80","lastWeekPosition":"New","title":"I'LL BE WAITING","artist":"CIAN DUCROT","label":"POLYDOR","peakPosition":"80","weeksOnChart":"1"},{"currentPosition":"81","lastWeekPosition":"68","title":"CALIFORNIA BREEZE","artist":"LIL BABY","label":"MOTOWN/QUALITY CONTROL","peakPosition":"26","weeksOnChart":"5"},{"currentPosition":"82","lastWeekPosition":"90","title":"SOMEONE YOU LOVED","artist":"LEWIS CAPALDI","label":"EMI","peakPosition":"1","weeksOnChart":"179"},{"currentPosition":"83","lastWeekPosition":"69","title":"MY G","artist":"AITCH & ED SHEERAN","label":"ASYLUM/CAPITOL","peakPosition":"6","weeksOnChart":"13"},{"currentPosition":"84","lastWeekPosition":"83","title":"SOMETHING IN THE ORANGE","artist":"ZACH BRYAN","label":"WARNER RECORDS","peakPosition":"70","weeksOnChart":"10"},{"currentPosition":"85","lastWeekPosition":"75","title":"CRAZY WHAT LOVE CAN DO","artist":"DAVID GUETTA/HILL/HENDERSON","label":"PARLOPHONE","peakPosition":"5","weeksOnChart":"32"},{"currentPosition":"86","lastWeekPosition":"89","title":"SWEATER WEATHER","artist":"NEIGHBOURHOOD","label":"COLUMBIA","peakPosition":"49","weeksOnChart":"20"},{"currentPosition":"87","lastWeekPosition":"82","title":"I'M IN LOVE WITH YOU","artist":"1975","label":"DIRTY HIT","peakPosition":"29","weeksOnChart":"9"},{"currentPosition":"88","lastWeekPosition":"96","title":"ABOUT YOU","artist":"1975","label":"DIRTY HIT","peakPosition":"62","weeksOnChart":"3"},{"currentPosition":"89","lastWeekPosition":"85","title":"MR BRIGHTSIDE","artist":"KILLERS","label":"MERCURY","peakPosition":"10","weeksOnChart":"341"},{"currentPosition":"90","lastWeekPosition":"87","title":"REMEMBER","artist":"BECKY HILL & DAVID GUETTA","label":"POLYDOR","peakPosition":"3","weeksOnChart":"58"},{"currentPosition":"91","lastWeekPosition":"88","title":"I DRINK WINE","artist":"ADELE","label":"COLUMBIA","peakPosition":"4","weeksOnChart":"19"},{"currentPosition":"92","lastWeekPosition":"Re","title":"ROCKIN' AROUND THE CHRISTMAS TREE","artist":"BRENDA LEE","label":"MCA","peakPosition":"5","weeksOnChart":"60"},{"currentPosition":"93","lastWeekPosition":"35","title":"ROMANTIC HOMICIDE","artist":"D4VD","label":"D4VD","peakPosition":"22","weeksOnChart":"10"},{"currentPosition":"94","lastWeekPosition":"86","title":"MATILDA","artist":"HARRY STYLES","label":"COLUMBIA","peakPosition":"37","weeksOnChart":"14"},{"currentPosition":"95","lastWeekPosition":"65","title":"LET'S GO","artist":"TION WAYNE FT AITCH","label":"ATLANTIC","peakPosition":"30","weeksOnChart":"6"},{"currentPosition":"96","lastWeekPosition":"95","title":"BABY GIRL","artist":"DISCO LINES","label":"DISCO DISCO DISCO","peakPosition":"86","weeksOnChart":"9"},{"currentPosition":"97","lastWeekPosition":"79","title":"DANCE ALL OVER ME","artist":"GEORGE EZRA","label":"COLUMBIA","peakPosition":"61","weeksOnChart":"5"},{"currentPosition":"98","lastWeekPosition":"97","title":"SEVENTEEN GOING UNDER","artist":"SAM FENDER","label":"POLYDOR","peakPosition":"3","weeksOnChart":"70"},{"currentPosition":"99","lastWeekPosition":"New","title":"SHUT UP MY MOMS CALLING","artist":"HOTEL UGLY","label":"HOTEL UGLY","peakPosition":"99","weeksOnChart":"1"},{"currentPosition":"100","lastWeekPosition":"98","title":"SNAP","artist":"ROSA LINN","label":"MINISTRY OF SOUND","peakPosition":"21","weeksOnChart":"18"}]}
+    ],
+  
+    "scales": [
+      {
+        "name": "x",
+        "type": "linear",
+        "round": true,
+        "nice": true,
+        "zero": true,
+        "domain": {"data": "source", "field": "currentPosition"},
+        "range": "width"
+            },
+      {
+        "name": "y",
+        "type": "linear",
+        "round": true,
+        "nice": true,
+        "zero": true,
+        "domain": {"data": "source", "field": "peakPosition"},
+        "range": "height"
+      },
+      {
+        "name": "size",
+        "type": "linear",
+        "round": true,
+        "nice": false,
+        "zero": true,
+        "domain": {"data": "source", "field": "weeksOnChart"},
+        "range": [1,500]
+      }
+    ],
+  
+    "axes": [
+      {
+        "scale": "x",
+        "grid": true,
+        "domain": false,
+        "orient": "bottom",
+        "tickCount": 5,
+        "title": "Current Position"
+      },
+      {
+        "scale": "y",
+        "grid": true,
+        "domain": false,
+        "orient": "right",
+        "titlePadding": 5,
+        "title": "Peak Position"
+      }
+    ],
+  
+    "legends": [
+      {
+        "size": "size",
+        "title": "Weeks in Charts",
+        "format": "s",
+        "symbolStrokeColor": "#4682b4",
+        "symbolStrokeWidth": 2,
+        "symbolOpacity": 0.5,
+        "symbolType": "circle"
+      }
+    ],
+  
+    "marks": [
+      {
+        "name": "marks",
+        "type": "symbol",
+        "from": {"data": "source"},
+        "encode": {
+          "update": {
+            "x": {"scale": "x", "field": "currentPosition"},
+            "y": {"scale": "y", "field": "peakPosition"},
+            "size": {"scale": "size", "field": "weeksOnChart"},
+            "shape": {"value": "circle"},
+            "strokeWidth": {"value": 2},
+            "opacity": {"value": 0.5},
+            "stroke": {"value": "#4682b4"},
+            "fill": {"value": "transparent"},
+            "tooltip":[{"field":"title","type":"linear","title":"Current Position"}]
+          }
+        }
+      }
+    ]
+  }

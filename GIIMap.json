@@ -1,46 +1,48 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
-    "width": 500,
+    "width": 600,
     "height": 300,
     "view": {"stroke": "transparent"},
   
      "title": {
-      "text": "Population of Asian Countries",
+      "text": "Gender Inequality Index (GII)",
       "fontSize": 12,
-      "subtitle":["", ""],
+      "subtitle":["Latest Available Data (2013)", ""],
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10, "anchor": "middle"
     },
     
     "data": {
-      "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/AsiaMap.json",
+      "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/custom.geo.json",
       "format": {"property": "features"}
     },
   
     "transform": [{
-    "lookup": "properties.name",
+    "lookup": "properties.adm0_iso",
     "from": {
-      "key": "name",
-      "fields": ["population"],
-      "data": {"url":"https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/AsiaPop.csv"}}}],
+      "key": "country_code",
+      "fields": ["value"],
+      "data": {"url":"https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/GII.csv"}}}],
   
     "projection": {"type": "equalEarth"},
-    "mark": "geoshape", 
+    "mark": { "type": "geoshape",
+    "stroke": "black",
+    "strokeWidth": 0.3},
   
     "encoding":{
       "color":{
-        "field":"population",
+        "field":"value",
         "legend":{
           "title": null,
           "orient": "right",
           "direction": "vertical"},
           "type": "quantitative",
           "scale":{
-            "scheme":"lighttealblue",
+            "scheme":"purplebluegreen",
             "reverse": false}},
       "tooltip":[
         {"field":"properties.name", "title": "Country"},
-        {"field":"population", "title": "Population", "format": ",d"}
+        {"field":"value", "title": "Gender Inequality Index (GII)"}
       ]
     }}

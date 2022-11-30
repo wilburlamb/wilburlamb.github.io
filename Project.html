@@ -4,9 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Project</title>
+
+    <link rel="stylesheet" href="Project.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
 </head>
+
 <body>
+    <div class="wrap">    
+
+        <h1>Project</h1>    
     
+        <p>Welcome to my project page for Data Science 2022</p>
+    </div>
+
+    <div class = "links">   
+        <a href="index.html" class="link" id="link2">Home</a>
+        <a href="Portfolio.html" class="link" id="link1">Portfolio</a>
+        <a href="About.html" class= "link" id="link3">About</a>
+        <a href="https://github.com/wilburlamb/wilburlamb.github.io" class= "link" id="link4">GitHub</a>
+    </div>
+
+    <div class="mySection1">
+        <h1>FIFA Rankings</h1>
+        
+        <h3>Does hosting the world cup affect FIFA ranking?</h3>
+        <p>This chart is an index of FIFA rankings for the four most recent world cup hosts</p>
+        <div class="chart" id="chart1"></div>
+
+        <p>This chart is an index of the Human Development Index for the four most recent world cup hosts</p>
+        <div class="chart" id="chart2"></div>
+    </div> 
 </body>
+
+<script>
+
+    //Define charts:
+    var myChart1 = "project_fifarank.json";
+    var myChart2 = "project_hdi.json";
+
+    // Embed charts:
+    vegaEmbed('#chart1', myChart1);
+    vegaEmbed('#chart2', myChart2);
+
+</script>
+
 </html>
