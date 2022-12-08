@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "World Cup Costs",
       "title": {
-        "text": "Cost of Hosting World Cup",
+        "text": "Cost of Hosting World Cup (Including Qatar 2022)",
         "subtitle": ["Money spent by host nation on hosting the World Cup (bars)",
         "Percentage of Host Nations Annual GDP in year of World Cup (line)",
         "Current (USD$)",
@@ -14,7 +14,7 @@
     "width": 350,
     "height": 350,
     "data": {
-      "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/WORLDCUPCOSTSANDGDPNOQAT.csv"
+      "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/WORLDCUPCOSTSANDGDPINCQAT.csv"
     },
     "encoding": {
       "x": {
@@ -34,7 +34,7 @@
           "y": {
             "field": "General Cost",
             "type": "quantitative",
-            "scale": {"domain": [0, 20]},
+            "scale": {"domain": [0, 240]},
             "title": "Cost of Hosting World Cup",
             "axis": {"titleColor": "#a5b702"}
           }
@@ -46,6 +46,7 @@
           "y": {
             "field": "%ofGDP",
             "type": "quantitative",
+            "scale": {"domain": [0, 130]},
             "title": "Percentage of Host Countries GDP",
             "axis": {"titleColor": "#30cf5f"}
           }

@@ -1,0 +1,43 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+      "text": "Cost of Hosting World Cup",
+      "subtitle": ["Money spent by host nation on hosting the World Cup (USD$ billions)",
+      "Multiple Sources via Wikipedia"],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"},
+  
+  "data":{"url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/WORLDCUPCOSTS (1).csv"},
+  
+  "height": 300,
+  "width": 260,
+
+  "mark": {
+    "type": "bar"},
+
+"encoding": {
+     "x": {
+       "field": "Year",
+       "type": "nominal",
+       "axis": {
+         "title": null,
+         "grid": false,
+         "ticks": false,
+         "labelAngle": 45}},
+
+      "y": {
+        "field": "General Cost",
+        "type": "quantitative",
+        "title": "",
+        "axis": {"grid": false}},
+
+      "color": {
+        "field": "Host Nation",
+        "type": "nominal",
+        "title": "Country",
+        "scale": {"scheme": "set1"}
+      }
+}
+}

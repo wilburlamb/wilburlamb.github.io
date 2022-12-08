@@ -1,92 +1,93 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": {
-      "text": "FIFA Rankings: Four World Cup Hosts",
-      "subtitle": [
-        "Source: FIFA via Kaggle",
-        "Year -4 = Year of Previous World Cup; Year 0 = Year of World Cup, Index=100; Year 4 = Year of Next World Cup",
-        "Host Countries: Germany 2006 (black), South Africa 2010 (green), Brazil 2014 (yellow), Russia 2018 (Red)",
-        "Note: Lower Index = Higher Ranking"
-      ],
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 10,
-      "anchor": "start",
-      "color": "#000000",
-      "subtitleColor": "#000000"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "FIFA Rankings: Four World Cup Hosts",
+    "subtitle": [
+      "Source: FIFA via Kaggle",
+      "Year -4 = Year of Previous World Cup; Year 0 = Year of World Cup, Index=100; Year 4 = Year of Next World Cup",
+      "Host Countries: Germany 2006 (black), South Africa 2010 (green), Brazil 2014 (yellow), Russia 2018 (Red)",
+      "Note: Lower Index = Higher Ranking"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#000000",
+    "subtitleColor": "#000000"
+  },
+  "config": {"background": "#ffffff", "view": {"stroke": "transparent"}},
+  "width": 400,
+  "height": 300,
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "quantitative",
+      "title": "Year",
+      "scale": {"domain": [-4, 4]},
+      "axis": {
+        "grid": false,
+        "domainColor": "#000000",
+        "labelColor": "#000000",
+        "tickColor": "#000000",
+        "gridColor": "black",
+        "titleColor": "#000000"
+      }
     },
-    "config": {"background": "#ffffff", "view": {"stroke": "transparent"}},
-    "width": 400,
-    "height": 300,
-    "encoding": {
-      "x": {
-        "field": "Year",
-        "type": "quantitative",
-        "title": "Year",
-        "axis": {
-          "grid": false,
-          "domainColor": "#000000",
-          "labelColor": "#000000",
-          "tickColor": "#000000",
-          "gridColor": "black",
-          "titleColor": "#000000"
-        }
-      },
-      "y": {
-        "field": "Index",
-        "type": "quantitative",
-        "scale": {"domain": [0, 160]},
-        "title": "Index",
-        "axis": {
-          "grid": false,
-          "domainColor": "#000000",
-          "labelColor": "#000000",
-          "tickColor": "#000000",
-          "gridColor": "black",
-          "titleColor": "#000000"
-        }
-      },
-      "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.2},
-      "tooltip": [
-        {"field": "Ranking", "title": "Fifa Ranking"},
-        {"field": "Country", "title": "Country", "type": "nominal"},
-        {"field": "Year", "title": "Years since World Cup", "type": "quantitative"}
-      ]
+    "y": {
+      "field": "Index",
+      "type": "quantitative",
+      "scale": {"domain": [0, 160]},
+      "title": "Index",
+      "axis": {
+        "grid": false,
+        "domainColor": "#000000",
+        "labelColor": "#000000",
+        "tickColor": "#000000",
+        "gridColor": "black",
+        "titleColor": "#000000"
+      }
     },
-    "layer": [
-      {
-        "data": {
-          "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/GERMANYRANKINDEX.csv"
-        },
-        "mark": {"type": "line", "color": "#040404"}
-      },
-      {
-        "data": {
-          "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/SOUTHAFRICARANKINDEX.csv"
-        },
-        "mark": {"type": "line", "color": "#318f47"}
-      },
-      {
-        "data": {
-          "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/BRAZILRANKINDEX.csv"
-        },
-        "mark": {"type": "line", "color": "#f5c22b"}
-      },
-      {
-        "data": {
-          "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/RUSSIARANKINDEX.csv"
-        },
-        "mark": {"type": "line", "color": "#f50202ec"}
-      },
-      {
-        "params": [
-          {
-            "name": "hover",
-            "value": [{"Country": "Germany"}],
-            "select": {"type": "point", "fields": ["Country"], "on": "mouseover"}
-          }
-        ],
-        "mark": {"type": "line", "strokeWidth": 10, "stroke": "transparent"}
-      },
-      {"mark": "line"}
+    "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.2},
+    "tooltip": [
+      {"field": "Ranking", "title": "Fifa Ranking"},
+      {"field": "Country", "title": "Country", "type": "nominal"},
+      {"field": "Year", "title": "Years since World Cup", "type": "quantitative"}
     ]
-  }
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/GERMANYRANKINDEX.csv"
+      },
+      "mark": {"type": "line", "color": "#040404"}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/SOUTHAFRICARANKINDEX.csv"
+      },
+      "mark": {"type": "line", "color": "#318f47"}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/BRAZILRANKINDEX.csv"
+      },
+      "mark": {"type": "line", "color": "#f5c22b"}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/RUSSIARANKINDEX.csv"
+      },
+      "mark": {"type": "line", "color": "#f50202ec"}
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "value": [{"Country": "Germany"}],
+          "select": {"type": "point", "fields": ["Country"], "on": "mouseover"}
+        }
+      ],
+      "mark": {"type": "line", "strokeWidth": 10, "stroke": "transparent"}
+    },
+    {"mark": "line"}
+  ]
+}

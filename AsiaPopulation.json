@@ -8,7 +8,7 @@
      "title": {
       "text": "Population of Asian Countries",
       "fontSize": 12,
-      "subtitle":["", ""],
+      "subtitle":["Equal Earth Projection", "Source: Esri"],
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10, "anchor": "middle"
     },

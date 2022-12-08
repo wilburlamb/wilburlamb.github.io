@@ -1,0 +1,53 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Adidas",
+      "subtitle": "Price at close (USD$), Weekly. Source: Alpha Vantage API",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "#000000",
+      "subtitleColor": "#000000"
+    },
+    "data": {
+      "url": "https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY&symbol=ADS1.FRK&apikey=D974VVUIJ9KNBV1F&datatype=csv",
+      "format": {"type": "csv"}
+    },
+    "config": {"background": "#ffffff", "view": {"stroke": "transparent"}},
+    "height": 300,
+    "width": 285,
+    "mark": {"type": "line", "point": false, "clip": true, "color": "#64dc59"},
+    "encoding": {
+      "x": {
+        "field": "timestamp",
+        "type": "temporal",
+        "title": null,
+        "axis": {
+          "grid": false,
+          "domainColor": "#000000",
+          "labelColor": "#000000",
+          "tickColor": "#000000",
+          "gridColor": "black"
+        },
+        "scale": {"domainMin": {"year": 2022, "month": "jan", "date": 13}}
+      },
+      "y": {
+        "field": "close",
+        "type": "quantitative",
+        "title": "Stock Price",
+        "axis": {
+          "grid": false,
+          "domainColor": "#000000",
+          "labelColor": "#000000",
+          "tickColor": "#000000",
+          "gridColor": "black",
+          "titleColor": "#000000"
+        },
+        "scale": {"domain": [40, 140]}
+      },
+      "tooltip": [
+        {"field": "timestamp", "type": "temporal", "title": "Date"},
+        {"field": "close", "title": "Stock Price", "type": "quantitative"}
+      ]
+    }
+  }

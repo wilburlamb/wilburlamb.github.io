@@ -1,0 +1,96 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Regression: Stock Prices of Budweiser on Coca-Cola",
+      "subtitle": "Price at close (US$) in World Cup Year (2022), Source: Yahoo Finance",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "#000000",
+      "subtitleColor": "#000000"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/LONGTERMSPONSORSTOCKS.csv"
+    },
+    "height": 300,
+    "width": 295,
+    "config": {"background": "#ffffff", "view": {"stroke": "transparent"}},
+    "layer": [
+      {
+        "mark": {
+          "type": "circle",
+          "point": false,
+          "clip": true,
+          "color": "#d7b509"
+        },
+        "encoding": {
+          "x": {
+            "field": "KO",
+            "type": "quantitative",
+            "title": "Coca-Cola (US$)",
+            "axis": {
+              "grid": false,
+              "domainColor": "#000000",
+              "labelColor": "#000000",
+              "tickColor": "#000000",
+              "gridColor": "black",
+              "titleColor": "#000000"
+            },
+            "scale": {"domain": [53, 65]}
+          },
+          "y": {
+            "field": "BUD",
+            "type": "quantitative",
+            "title": "Budweiser (US$)",
+            "axis": {
+              "grid": false,
+              "domainColor": "#000000",
+              "labelColor": "#000000",
+              "tickColor": "#000000",
+              "gridColor": "black",
+              "titleColor": "#000000"
+            },
+            "scale": {"domain": [40, 70]}
+          },
+          "tooltip": [
+            {
+              "field": "KO",
+              "type": "quantitative",
+              "title": "Coca-Cola stock price"
+            },
+            {"field": "BUD", "type": "quantitative", "title": "Budweiser stock price"}
+          ]
+        }
+      },
+      {
+        "mark": {"type": "line", "color": "#03bc38bb", "strokeWidth": 5},
+        "transform": [{"regression": "BUD", "on": "KO"}],
+        "encoding": {
+          "x": {
+            "field": "KO",
+            "type": "quantitative",
+            "scale": {"domain": [53, 65]}
+          },
+          "y": {
+            "field": "BUD",
+            "type": "quantitative",
+            "scale": {"domain": [40, 70]}
+          }
+        }
+      },
+      {
+        "transform": [
+          {"regression": "BUD", "on": "KO", "params": true},
+          {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+        ],
+        "mark": {
+          "type": "text",
+          "color": "#000000",
+          "x": "width",
+          "align": "right",
+          "y": 0
+        },
+        "encoding": {"text": {"type": "nominal", "field": "R2"}}
+      }
+    ]
+  }

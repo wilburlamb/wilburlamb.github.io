@@ -198,21 +198,6 @@ h1, h3, p{
       padding: 10px;
     }
   }
-   
-  /* Four columns*/
-  @media only screen and (min-width: 1800px) {
-    .grid_items, .wrap {
-      grid-template-columns: 25% 25% 25% 25%;
-      max-width: 1900px; 
-      margin: 0 auto 0 auto !important;
-      padding: 0 5 0 5; 
-      grid-column-gap: 20px;
-      grid-row-gap: 50px;
-    }
-    .grid_items > div {
-      padding: 10px;
-    }
-  }
 .myWeek7{
     margin: auto;
     max-width: 800px;
@@ -310,4 +295,10 @@ h1, h3, p{
 }
 #chart18{
     width:620px
+}
+#chart21{
+  width:460px
+}
+#chart22{
+  width:400px
 }

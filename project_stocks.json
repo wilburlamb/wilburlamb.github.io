@@ -1,0 +1,80 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Stock Price of World Cup Sponsors",
+      "subtitle": "Price at close (US$) over past year, Source: Yahoo Finance",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "#000000",
+      "subtitleColor": "#000000"
+    },
+    "config": {"background": "#ffffff", "view": {"stroke": "transparent"}},
+    "data": {
+      "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/LongSponsor%20(1).csv"
+    },
+    "width": 290,
+    "height": 300,
+    "encoding": {
+      "x": {
+        "field": "Date",
+        "type": "temporal",
+        "title": null,
+        "axis": {
+          "grid": false,
+          "domainColor": "#000000",
+          "labelColor": "#000000",
+          "tickColor": "#000000",
+          "gridColor": "black"
+        }
+      },
+      "y": {
+        "field": "Close",
+        "type": "quantitative",
+        "title": "Closing Price (US$)",
+        "axis": {
+          "grid": false,
+          "domainColor": "#000000",
+          "labelColor": "#000000",
+          "tickColor": "#000000",
+          "gridColor": "black",
+          "titleColor": "#000000"
+        },
+        "scale": {"domain": [0, 300]}
+      },
+      "color": {
+        "condition": {
+          "param": "hover",
+          "field": "Name",
+          "type": "nominal",
+          "legend": null,
+          "scale": {"scheme": "lightmulti"}
+        },
+        "value": "grey"
+      },
+      "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.5},
+      "tooltip": [
+        {"field": "Name", "title": "Sponsor"},
+        {
+          "field": "Close",
+          "title": "Closing Price (US$)",
+          "type": "quantitative"
+        },
+        {"field": "Date", "type": "temporal"}
+      ]
+    },
+    "layer": [
+      {
+        "description": "transparent layer to make it easier to trigger selection",
+        "params": [
+          {
+            "name": "hover",
+            "value": [{"Name": "BUD"}],
+            "select": {"type": "point", "fields": ["Name"], "on": "mouseover"}
+          }
+        ],
+        "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
+      },
+      {"mark": "line"}
+    ]
+  }
