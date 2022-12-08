@@ -69,6 +69,14 @@ h1, h3, p{
     align-content: center;
     margin: auto; 
 }
+.grid_item{
+  background-color: white;
+  width:445px;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 2px;
+  border-color: rgb(113, 141, 58);
+}
 .grid_items {
     padding: 2px;
     display: grid;
@@ -169,3 +177,9 @@ h1, h3, p{
       padding: 10px;
     }
   }
+ #chart3{
+    width: 520px;
+}
+#chart4{
+    width: 520px;
+}

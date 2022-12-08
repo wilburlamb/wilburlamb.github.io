@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
       "text": "Stock Price of World Cup Sponsors",
-      "subtitle": "Price at close (US$) over past year, Source: Yahoo Finance",
+      "subtitle": "Price at close (US$), World Cup Year, 2022; Source: Yahoo Finance",
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 10,
       "anchor": "start",
