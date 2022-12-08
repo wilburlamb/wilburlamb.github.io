@@ -4,9 +4,9 @@
       "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/TOURISMINDEXWC.csv"
     },
     "title": {
-      "text": "International Tourism Reciepts of World Cup Hosts",
+      "text": "International Tourism Reciepts: World Cup Hosts",
       "subtitle": [
-        "Index of International Tourism Recipets (current US$), Source: World Bank",
+        "Index of International Tourism Recipets (current US$)", "Source: World Bank",
         "World Cup Year Index = 100"
       ],
       "subtitleFontStyle": "italic",
@@ -15,8 +15,8 @@
       "color": "#000000",
       "subtitleColor": "#000000"
     },
-    "height": 300,
-    "width": 300,
+    "height": 250,
+    "width": 280  ,
     "config": {"background": "#ffffff", "view": {"stroke": "transparent"}},
     "repeat": {"layer": ["Year Before", "World Cup Year", "Year After"]},
     "spec": {

@@ -58,7 +58,7 @@ h1, h3, p{
 }
 .chart{
     background-color: white;
-    width:445px;
+    width:250px;
     border-width: 3px;
     border-style: solid;
     border-radius: 2px;
@@ -71,7 +71,7 @@ h1, h3, p{
 }
 .grid_item{
   background-color: white;
-  width:445px;
+  width:320px;
   border-width: 3px;
   border-style: solid;
   border-radius: 2px;
@@ -177,9 +177,3 @@ h1, h3, p{
       padding: 10px;
     }
   }
- #chart3{
-    width: 520px;
-}
-#chart4{
-    width: 520px;
-}

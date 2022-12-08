@@ -11,8 +11,8 @@
         "subtitleFontSize":10,
         "anchor": "start",
         "color": "black"},
-    "width": 350,
-    "height": 350,
+    "width": 250,
+    "height": 250,
     "data": {
       "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/WORLDCUPCOSTSANDGDPINCQAT.csv"
     },

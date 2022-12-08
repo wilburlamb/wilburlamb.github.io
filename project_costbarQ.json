@@ -11,8 +11,8 @@
   
   "data":{"url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/WORLDCUPCOSTS (1).csv"},
   
-  "height": 300,
-  "width": 260,
+  "height": 100,
+  "width": 150,
 
   "mark": {
     "type": "bar"},

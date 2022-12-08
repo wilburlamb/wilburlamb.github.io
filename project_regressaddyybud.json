@@ -12,8 +12,8 @@
     "data": {
       "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/LONGTERMSPONSORSTOCKS.csv"
     },
-    "height": 300,
-    "width": 330,
+    "height": 285,
+    "width": 280,
     "config": {"background": "#ffffff", "view": {"stroke": "transparent"}},
     "layer": [
       {
@@ -56,11 +56,11 @@
             {
               "field": "BUD",
               "type": "quantitative",
-              "title": "Budweiser stock price"
+              "title": "Budweiser (US$)"
             },
             {"field": "ADDYY",
              "type": "quantitative", 
-             "title": "Adidas stock price"}
+             "title": "Adidas (US$)"}
           ]
         }
       },

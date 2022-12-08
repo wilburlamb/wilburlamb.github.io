@@ -1,12 +1,11 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-      "text": "Human Development Index: Four World Cup Hosts",
+      "text": "Human Development Index: World Cup Hosts",
       "subtitle": [
         "Source: UN via Kaggle",
-        "Year -4 = Year of Previous World Cup; Year 0 = Year of World Cup, Index=100; Year 4 = Year of Next World Cup",
-        "Host Countries: Germany 2006 (black), South Africa 2010 (green), Brazil 2014 (yellow), Russia 2018 (Red)",
-        "Note: Lower Index = Higher Ranking"
+        "Year -4 = Year of Previous World Cup", "Year 0 = Year of World Cup, Index=100", "Year 4 = Year of Next World Cup",
+        "Host Countries: Germany 2006 (black)", "South Africa 2010 (green), Brazil 2014 (yellow), Russia 2018 (Red)"
       ],
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 10,
@@ -15,8 +14,8 @@
       "subtitleColor": "#000000"
     },
     "config": {"background": "#ffffff", "view": {"stroke": "transparent"}},
-    "width": 400,
-    "height": 300,
+    "width": 250,
+    "height": 270,
     "encoding": {
       "x": {
         "field": "Year",
