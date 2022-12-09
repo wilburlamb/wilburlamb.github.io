@@ -1,9 +1,20 @@
 {
     "$schema": "https://vega.github.io/schema/vega/v5.json",
     "description": "A basic scatter plot example depicting automobile statistics.",
-    "width": 300,
+    "width": 290,
     "height": 300,
     "padding": 5,
+
+    "title": {
+      "text": "UK Singles Charts",
+      "subtitle":["Week starting 21st Nov 2022, Source: Official Charts"],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+  
+    },
+  
   
     "data": [
       {
@@ -44,7 +55,7 @@
     "axes": [
       {
         "scale": "x",
-        "grid": true,
+        "grid": false,
         "domain": false,
         "orient": "bottom",
         "tickCount": 5,
@@ -52,7 +63,7 @@
       },
       {
         "scale": "y",
-        "grid": true,
+        "grid": false,
         "domain": false,
         "orient": "right",
         "titlePadding": 5,
@@ -68,7 +79,8 @@
         "symbolStrokeColor": "#4682b4",
         "symbolStrokeWidth": 2,
         "symbolOpacity": 0.5,
-        "symbolType": "circle"
+        "symbolType": "circle",
+        "orient": "top-left"
       }
     ],
   

@@ -58,14 +58,14 @@
         {
           "field": "Close",
           "title": "Closing Price (US$)",
-          "type": "quantitative"
+          "type": "quantitative",
+          "format": ".2f"
         },
         {"field": "Date", "type": "temporal"}
       ]
     },
     "layer": [
       {
-        "description": "transparent layer to make it easier to trigger selection",
         "params": [
           {
             "name": "hover",

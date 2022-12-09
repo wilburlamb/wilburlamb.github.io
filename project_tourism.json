@@ -66,14 +66,20 @@
           {
             "field": "Year Before",
             "type": "quantitative",
-            "title": "Year Before"
+            "title": "Year Before",
+            "format": ".2f"
           },
           {
             "field": "World Cup Year",
             "type": "quantitative",
-            "title": "World Cup Year"
+            "title": "World Cup Year",
+            "format": ".2f"
           },
-          {"field": "Year After", "type": "quantitative", "title": "Year After"}
+          {"field": "Year After",
+          "type": "quantitative",
+          "title": "Year After",
+          "format": ".2f"
+        }
         ]
       }
     }

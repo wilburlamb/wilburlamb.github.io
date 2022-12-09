@@ -56,11 +56,14 @@
             {
               "field": "BUD",
               "type": "quantitative",
-              "title": "Budweiser (US$)"
+              "title": "Budweiser stock (US$)",
+              "format": ".2f"
             },
             {"field": "ADDYY",
              "type": "quantitative", 
-             "title": "Adidas (US$)"}
+             "title": "Adidas stock (US$)",
+             "format": ".2f"
+            }
           ]
         }
       },

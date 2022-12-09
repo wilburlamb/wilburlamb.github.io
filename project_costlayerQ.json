@@ -24,8 +24,10 @@
         "title": "Year",
         "axis": {"labelAngle": 60, "labelFontSize":10}
       },
-      "tooltip": [{"field": "Year", "title": "Year"}, {"field": "General Cost", "title": "Cost ($ billions)"},
-      {"field": "GDP", "title": "GDP ($ billions)"}, {"field": "%ofGDP", "title": "Percent of GDP"}]
+      "tooltip": [{"field": "Year", "title": "Year"}, 
+      {"field": "General Cost", "title": "Cost ($ billions)"},
+      {"field": "GDP", "title": "GDP ($ billions)"},
+      {"field": "%ofGDP", "title": "Percent of GDP", "format": ".2f"}]
     },
     "layer": [
       {

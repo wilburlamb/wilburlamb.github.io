@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 500,
+    "width": 300,
     "height": 300,
     "title": {
       "text": "Asia Map",

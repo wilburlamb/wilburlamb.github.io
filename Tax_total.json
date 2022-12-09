@@ -14,8 +14,8 @@
     "anchor": "start",
     "color": "black"
   },
-  "width": 150,
-  "height": 150,
+  "width": 205,
+  "height": 200,
   "encoding": {
     "x": {"field": "date", "type": "temporal", "title": null},
     "y": {"field": "value", "type": "quantitative", "title": null},
@@ -24,5 +24,32 @@
       {"field": "value", "type": "quantitative", "title": "Taxes on Production (£m)"}
     ]
   },
+
+      "transform": [
+
+{"calculate": "year(datum.date)", "as": "year"},
+{"filter": "datum.year>=minYear"},
+{"filter": "datum.year<=maxYear"},
+
+{"calculate": "datum.value", "as": "value"}
+],
+"params": [    
+{"name":"minYear", "value":1947,
+"bind":{
+"input": "range",
+"min": 1947, 
+"max": 2020, 
+"step": 1,
+"name": "Start year:"}},
+
+{"name":"maxYear", "value":2021,
+"bind":{
+"input": "range",
+"min": 1948, 
+"max": 2021, 
+"step": 1,
+"name": "End year:"}
+}
+], 
   "config": {}
 }

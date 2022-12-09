@@ -183,21 +183,7 @@ h1, h3, p{
     }
   }
  
-  /* Three columns*/
-  @media only screen and (min-width: 1400px) {
-    .grid_items, .wrap {
-      grid-template-columns: 30% 30% 30%;
-      max-width: 1400px; 
-      margin: 0 auto 0 auto !important;
-      padding: 0 5 0 5; 
-      grid-column-gap: 20px;
-      grid-row-gap: 50px;
-    }
-    
-    .grid_items > div {
-      padding: 10px;
-    }
-  }
+
 .myWeek7{
     margin: auto;
     max-width: 800px;
@@ -258,47 +244,47 @@ h1, h3, p{
 
 }
 #chart6{ 
-    width: 500px;
+    width: 350px;
 }
 #chart7{
-    width: 580px;
+    width: 360px;
 }
 #chart8{
-    width:230px
+    width:280px
 }
 #chart9{
-    width:230px
+    width:280px
 }
 #chart10{
-    width:230px
+    width:280px
 }
 #chart11{
-    width:230px
+    width:280px
 }
 #chart12{
-    width:230px
+    width:280px
 }
 #chart13{
-    width:230px
+    width:280px
 }
 #chart14{
-    width:230px
+    width:280px
 }
 #chart15{
-    width:230px
+    width:280px
 }
 #chart16{
-    width:230px
+    width:280px
 }
 #chart17{
-    width:520px
+    width:350px
 }
 #chart18{
-    width:620px
+    width:350px
 }
 #chart21{
-  width:460px
+  width:350px
 }
 #chart22{
-  width:400px
+  width:350px
 }
