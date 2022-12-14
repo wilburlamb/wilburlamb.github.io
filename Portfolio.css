@@ -112,6 +112,17 @@ h1, h3, p{
     border-radius: 50px;
     border-color: rgb(255, 255, 255);
 }
+.myWeek6{
+  margin: auto;
+  max-width: 800px;
+  background-color: rgb(189, 194, 197);
+
+    
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 50px;
+  border-color: rgb(255, 255, 255);
+}
 .grid_items {
     padding: 2px;
     display: grid;
@@ -210,6 +221,17 @@ h1, h3, p{
   margin: auto;
   max-width: 800px;
   background-color: rgb(95, 149, 183);
+
+    
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 50px;
+  border-color: rgb(255, 255, 255);
+}
+.myWeek10{
+  margin: auto;
+  max-width: 800px;
+  background-color: rgb(117, 190, 236);
 
     
   border-width: 5px;

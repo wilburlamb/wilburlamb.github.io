@@ -1,0 +1,91 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.2.0.json",
+  "title": {
+    "text": ["GDP per capita and World Cup Performance","Top 15 Sides"],
+    "subtitle": [
+      "GDP per capita 2021, (2022 US$), Source: World Bank.",
+      "World Cup Performance, Source: thesoccerworldcups.com"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#000000",
+    "subtitleColor": "#000000"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/POINTS.csv",
+    "format": {"type": "csv"}
+  },
+
+  "height": 310,
+  "width": 280,
+  "config": {"background": "#ffffff", "view": {"stroke": "transparent"}},
+  "layer": [
+    {
+      "mark": {"type": "circle", "point": false, "interpolate": "monotone"},
+      "encoding": {
+        "color": {
+          "field": "Champion",
+          "legend": {
+            "direction": "vertical",
+            "orient": "top-right",
+            "title": "Trohpies",
+            "labelColor": "#000000",
+            "titleColor": "#000000"
+          },
+          "type": "quantitative",
+          "scale": {"domain": [5, 0], "scheme": "yellowgreen"}
+        }
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "GDP Per Capita",
+      "type": "quantitative",
+      "axis": {
+        "title": "GDP per capita (Current US$)",
+        "titleColor": "#000000",
+        "labelColor": "#000000",
+        "tickColor": "#000000",
+        "grid": false
+      },
+      "scale": {"domain": [0, 90000]}
+    },
+    "y": {
+      "field": "PTS",
+      "type": "quantitative",
+      "title": "Total World Cup Points",
+      "axis": {
+        "titleColor": "#000000",
+        "labelColor": "#000000",
+        "tickColor": "#000000",
+        "grid": false
+      },
+      "scale": {"domain": [0, 250]}
+    },
+    "tooltip": [
+      {"field": "National Team", "type": "nominal", "title": "Team"},
+      {
+        "field": "GDP Per Capita",
+        "type": "quantitative",
+        "title": "GDP per capita ($)"
+      },
+      {
+        "field": "PTS",
+        "type": "quantitative",
+        "title": "World Cup Points"
+      },
+      {"field": "Champion", "type": "quantitative", "title": "World Cup Trophies"},
+      {"field": "W", "type": "quantitative", "title": "World Cup Wins"}
+    ],
+    "size": {"field": "W", "type": "quantitative", "legend": {
+            "direction": "horizontal",
+            "orient": "bottom-right",
+            "title": "Wins",
+            "labelColor": "#000000",
+            "titleColor": "#000000"
+          }
+          }
+  }
+}

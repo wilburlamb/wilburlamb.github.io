@@ -12,7 +12,7 @@
   "data":{"url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/IMF2.0%20Clean.csv"},
 
   "height": 300,
-  "width": 260,
+  "width": 290,
 
   "mark": {
     "type": "bar",

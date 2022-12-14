@@ -1,0 +1,87 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/PRIZE2.csv"
+  },
+  "title": {
+    "text": "World Cup Prize Fund",
+    "subtitle": [
+      "Total prize fund (yellow), winning team prize (green)",
+      "Source: FIFA via Total Sportal"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#000000",
+    "subtitleColor": "#000000"
+  },
+  "height": 250,
+  "width": 280,
+  "config": {"background": "#ffffff", "view": {"stroke": "transparent"}},
+  "repeat": {"layer": ["WINNING TEAM", "TOTAL FUND"]},
+  "spec": {
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "field": "EVENT",
+        "type": "nominal",
+        "title": null,
+        "axis": {
+          "labelAngle": -45,
+          "labelFontSize": 10,
+          "grid": false,
+          "domainColor": "#000000",
+          "labelColor": "#000000",
+          "tickColor": "#000000",
+          "gridColor": "black",
+          "titleColor": "#000000"
+        }
+      },
+      "y": {
+        "aggregate": "sum",
+        "field": {"repeat": "layer"},
+        "type": "quantitative",
+        "title": "Prize Money (US$ million)",
+        "axis": {
+          "grid": false,
+          "domainColor": "#000000",
+          "labelColor": "#000000",
+          "tickColor": "#000000",
+          "gridColor": "black",
+          "titleColor": "#000000"
+        }
+      },
+      "color": {
+        "datum": {"repeat": "layer"},
+        "title": "",
+        "scale": {"range": ["#00A170", "#EFC050", "#0072B5"]},
+        "legend": {
+          "orient": "bottom",
+          "fillColor": "#ffffff",
+          "labelColor": "#000000"
+        }
+      },
+      "xOffset": {"datum": {"repeat": "layer"}},
+      "tooltip": [
+        {
+          "field": "WINNING TEAM",
+          "type": "quantitative",
+          "title": "Winning Prize ($ million)",
+          "format": ""
+        },
+        {
+          "field": "TOTAL FUND",
+          "type": "quantitative",
+          "title": "Total Prize Fund ($ million)",
+          "format": ""
+        },
+           {
+          "field": "GUARANTEED PAYMENT",
+          "type": "quantitative",
+          "title": "Gauranteed Payment ($ million)",
+          "format": ""
+        }
+      ]
+    }
+  }
+}

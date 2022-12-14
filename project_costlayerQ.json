@@ -4,7 +4,7 @@
       "title": {
         "text": "Cost of Hosting World Cup (Including Qatar 2022)",
         "subtitle": ["Money spent by host nation on hosting the World Cup (bars)",
-        "Percentage of Host Nations Annual GDP in year of World Cup (line)",
+        "Cost as a percentage of Host Nation's Annual GDP (line)",
         "Current (USD$)",
         "Sources: Wikipedia and World Bank"],
         "subtitleFontStyle":"italic",
@@ -21,7 +21,7 @@
         "field": "Host Nation",
         "type": "nominal",
         "sort": ["0"],
-        "title": "Year",
+        "title": "Host Nation",
         "axis": {"labelAngle": 60, "labelFontSize":10}
       },
       "tooltip": [{"field": "Year", "title": "Year"}, 
@@ -49,7 +49,7 @@
             "field": "%ofGDP",
             "type": "quantitative",
             "scale": {"domain": [0, 130]},
-            "title": "Percentage of Host Countries GDP",
+            "title": "Percentage of Host Nation's GDP",
             "axis": {"titleColor": "#30cf5f"}
           }
         }

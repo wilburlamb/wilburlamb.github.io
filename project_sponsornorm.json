@@ -1,0 +1,47 @@
+
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+     
+       "title": {
+        "text": "World Cup Sponsor Stocks",
+        "subtitle": ["Prices of FIFA World Cup sponsor's stocks clustered", "Coca-Cola (red), Adidas (black), Budweiser (yellow), 'McDonald's (green)",
+        "Source: Yahoo Finance"],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"},
+    
+      "data": {
+      "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/LONGTERMSPONSORSTOCKSNORM.csv"
+    },
+    
+    "repeat": {"layer": ["KO_z", "ADDY", "BUD_", "MCD_"]},
+   
+    "spec": {
+        
+        "height": 280,
+        "width": 280,
+ 
+        "mark": {
+            "type":"line",
+            "strokeWidth":2},    
+  
+        "encoding": {
+            "x": {
+                "field": "Date",
+                "type": "temporal"},
+    
+            "y": {
+                "field": {"repeat": "layer"},
+                "type": "quantitative",
+                "title": null},
+    
+            "color": {
+                "datum": {"repeat": "layer"},
+                "scale": {"range": ["red", "black", "orange", "green"]},
+                "legend": null
+          }
+      
+          } 
+      }
+  }

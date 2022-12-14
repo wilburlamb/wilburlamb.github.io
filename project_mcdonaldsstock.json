@@ -29,7 +29,7 @@
           "tickColor": "#000000",
           "gridColor": "black"
         },
-        "scale": {"domainMin": {"year": 2022, "month": "jan", "date": 01}}
+        "scale": {"domainMin": {"year": 2022, "month": "jan", "date": 15}}
       },
       "y": {
         "field": "close",
