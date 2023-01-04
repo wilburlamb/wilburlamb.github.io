@@ -6,7 +6,7 @@
         "subtitle": ["Money spent by host nation on hosting the World Cup (bars)",
         "Cost as a percentage of Host Nation's Annual GDP (line)",
         "Current (USD$)",
-        "Sources: Wikipedia and World Bank"],
+        "Sources: Multiple Sources via Wikipedia (costs); World Bank (GDP)"],
         "subtitleFontStyle":"italic",
         "subtitleFontSize":10,
         "anchor": "start",

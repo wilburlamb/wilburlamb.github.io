@@ -1,51 +1,40 @@
-/* FONTS: */
-
-h1{
-    font-family: 'Noto Sans Mono', sans-serif;
-    text-align: center;
-    background-color: rgb(114, 156, 174);
-}
-
-p{
-    font-family: 'Noto Sans Mono', sans-serif;
-    text-align: center;
-    font-size: larger;
-    color:rgb(255, 255, 255);
-    background-color: rgb(105, 125, 155);
-}
+/*Loading Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800');
 
 
-/* AREAS OF THE PAGE */
-
+/*Background of Page*/
 body{
-    background-color: rgb(120, 151, 194);
-}
+  background: linear-gradient(#012628, #000000) no-repeat center fixed;
+        background-size: cover;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 100vh;
+      }
 
-.wrap{
-    background-color: rgb(114, 156, 174);
-    display: block ;
-}
-
-
-
-
-/* BUTTONS */
-
+/* Appearance of Links*/
 .link{
-    background-color: rgba(132, 180, 230, 0.5);
+    background-color: #015155;
 
-    padding:10px;
+    padding:8px;
     
-    border:2px;
+    border:0px;
     border-color:grey;
     border-style: solid;
-    border-radius: 10px;
+    border-radius: 8px;
 
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Open Sans", sans-serif;
     font-weight:700;
     color:white;
     text-decoration: none;
 }
+.wrap{
+    display: block;
+    margin: auto;
+   }
 .links{
     display: flex;
     align-items: center;
@@ -60,10 +49,25 @@ a{
 
 .link:hover{
 
-    background-color: rgba(68, 116, 237, 0.821);
+    background-color: #0126289a;
 
-    border:2px;
+    border:0px;
     border-color:rgb(0, 0, 0);
     border-style: solid;
     
+}
+
+/*Font*/
+h3, p{
+    color:rgb(255, 255, 255);
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
+
+h1{
+  color:rgb(255, 255, 255);
+  font-family: "Montserrat";
+  text-align: center;
+    font-size: 50px;
+  
 }

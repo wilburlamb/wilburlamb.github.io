@@ -1,8 +1,13 @@
 
+/*Loading Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800');
 
+
+/*Background of Page*/
 body{
-    background-color: rgb(139, 177, 167);
+  background: linear-gradient(#59a7ac, #000000) no-repeat center fixed;
         background-size: cover;
         margin: 0;
         align-items: center;
@@ -11,17 +16,18 @@ body{
         min-height: 100vh;
       }
 
+/* Appearance of Links*/
 .link{
     background-color: rgba(132, 180, 230, 0.5);
 
-    padding:10px;
+    padding:8px;
     
-    border:2px;
+    border:0px;
     border-color:grey;
     border-style: solid;
-    border-radius: 10px;
+    border-radius: 8px;
 
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Open Sans", sans-serif;
     font-weight:700;
     color:white;
     text-decoration: none;
@@ -44,202 +50,217 @@ a{
 
 .link:hover{
 
-    background-color: rgba(68, 116, 237, 0.821);
+    background-color:#59a7ac9a;
 
-    border:2px;
+    border:0px;
     border-color:rgb(0, 0, 0);
     border-style: solid;
     
 }
 
-h1, h3, p{
-    color:rgb(0, 0, 0);
-    font-family: 'Noto Sans Mono', sans-serif;
+/*Font*/
+h3, p{
+    color:rgb(255, 255, 255);
+    font-family: "Open Sans", sans-serif;
     text-align: center;
 }
-    
+
+h2{
+  color:rgb(255, 255, 255);
+  font-family: "Montserrat";
+  text-align: center;
+  font-size: 50px
+}
+
+h1{
+  color:rgb(255, 255, 255);
+  font-family: "Montserrat";
+  text-align: center;
+}
+/*Grids - All charts in grids, different collumn number for different size screen*/
+.grid_items {
+  padding: 2px;
+  display: grid;
+  grid-template-columns: 100%;
+  max-width: 800px; 
+  margin: 0 auto 0 auto !important;
+  padding: 0 5 0 5; 
+  grid-column-gap: 5px;
+  grid-row-gap: 20px;
+}
+.grid_items > div {
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 10px;
+  width: 360px;
+  margin:auto;
+}
+.grid_items > div:nth-child(3n + 2) {
+  background-color: #ffffff;
+}
+.grid_items > div:nth-child(3n) {
+  background-color: #ffffff;
+}
+
+/* One column*/
+@media only screen and (min-width: 250px) {
+  .grid_items {
+    grid-template-columns: 100%;
+    max-width: 420px; 
+    margin: 0 auto 0 auto !important;
+    padding: 0 5 0 5; 
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    text-align: center;
+  }
+
+  .wrap {
+    grid-template-columns: 100%;
+    max-width: 360px; 
+    margin: 0 auto 0 auto !important;
+      padding: 0 5 0 5; 
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    text-align: center;
+  }
+  .grid_items > div {
+    padding: 10px;
+  }
+  .rubric {
+    text-align: left;
+  }
+
+
+}
+
+/* Two columns*/
+@media only screen and (min-width: 900px) {
+  .grid_items, .wrap {
+    grid-template-columns: 47.5% 47.5%;
+    max-width: 880px; 
+    margin: 0 auto 0 auto !important;
+    padding: 0 5 0 5; 
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    text-align: left;
+  }
+  .grid_items > div {
+    padding: 10px;
+  }
+}
+
+
+ /*Containers for each week's homework*/   
 .myWeek1{
     margin: auto;
     max-width: 800px;
-    background-color: rgb(206, 228, 235);
+    background: linear-gradient(#136569, #bdbcbc) no-repeat center fixed;
       
-    border-width: 5px;
+    border-width: 0px;
     border-style: solid;
-    border-radius: 50px;
+    border-radius: 10px;
     border-color: rgb(255, 255, 255);
 }
 .myWeek2{
         margin: auto;
         max-width: 800px;
-        background-color: rgb(159, 201, 227);
+        background: linear-gradient(#16575a, #888888) no-repeat center fixed;
     
           
-        border-width: 5px;
+        border-width: 0px;
         border-style: solid;
-        border-radius: 50px;
+        border-radius: 10px;
         border-color: rgb(255, 255, 255);
 }
 .myWeek3{
     margin: auto;
     max-width: 800px;
-    background-color: rgb(73, 103, 121);
-
+    background: linear-gradient(#134648, #606060) no-repeat center fixed;
       
-    border-width: 5px;
+    border-width: 0px;
     border-style: solid;
-    border-radius: 50px;
+    border-radius: 10px;
     border-color: rgb(255, 255, 255);
 }
 .myWeek4{
     margin: auto;
     max-width: 800px;
-    background-color: rgb(47, 67, 79);
+    background: linear-gradient(#11393a, #676767) no-repeat center fixed;
 
       
-    border-width: 5px;
+    border-width: 0px;
     border-style: solid;
-    border-radius: 50px;
+    border-radius: 10px;
     border-color: rgb(255, 255, 255);
 }
 .myWeek5{
     margin: auto;
     max-width: 800px;
-    background-color: rgb(31, 52, 65);
+    background: linear-gradient(#0e292b, #3c3c3c) no-repeat center fixed;
 
       
-    border-width: 5px;
+    border-width: 0px;
     border-style: solid;
-    border-radius: 50px;
+    border-radius: 10px;
     border-color: rgb(255, 255, 255);
 }
 .myWeek6{
   margin: auto;
   max-width: 800px;
-  background-color: rgb(189, 194, 197);
+  background: linear-gradient(#0c2122, #212121) no-repeat center fixed;
 
     
-  border-width: 5px;
+  border-width: 0px;
   border-style: solid;
-  border-radius: 50px;
+  border-radius: 10px;
   border-color: rgb(255, 255, 255);
 }
-.grid_items {
-    padding: 2px;
-    display: grid;
-    grid-template-columns: 100%;
-    max-width: 800px; 
-    margin: 0 auto 0 auto !important;
-    padding: 0 5 0 5; 
-    grid-column-gap: 5px;
-    grid-row-gap: 20px;
-  }
-  .grid_items > div {
-    background-color: #ffffff;
-    padding: 5px;
-    border-radius: 10px;
-    width: 360px;
-    margin:auto;
-  }
-  .grid_items > div:nth-child(3n + 2) {
-    background-color: #ffffff;
-  }
-  .grid_items > div:nth-child(3n) {
-    background-color: #ffffff;
-  }
-
-/* One column*/
-@media only screen and (min-width: 250px) {
-    .grid_items {
-      grid-template-columns: 100%;
-      max-width: 420px; 
-      margin: 0 auto 0 auto !important;
-      padding: 0 5 0 5; 
-      grid-column-gap: 10px;
-      grid-row-gap: 40px;
-      text-align: center;
-    }
-  
-    .wrap {
-      grid-template-columns: 100%;
-      max-width: 360px; 
-      margin: 0 auto 0 auto !important;
-        padding: 0 5 0 5; 
-      grid-column-gap: 10px;
-      grid-row-gap: 40px;
-      text-align: center;
-    }
-    .grid_items > div {
-      padding: 10px;
-    }
-    .rubric {
-      text-align: left;
-    }
-  
-  
-  }
-  
-  /* Two columns*/
-  @media only screen and (min-width: 900px) {
-    .grid_items, .wrap {
-      grid-template-columns: 47.5% 47.5%;
-      max-width: 880px; 
-      margin: 0 auto 0 auto !important;
-      padding: 0 5 0 5; 
-      grid-column-gap: 10px;
-      grid-row-gap: 40px;
-      text-align: left;
-    }
-    .grid_items > div {
-      padding: 10px;
-    }
-  }
- 
 
 .myWeek7{
     margin: auto;
     max-width: 800px;
-    background-color: rgb(21, 59, 83);
-
+    background: linear-gradient(#133638, #3d3d3d) no-repeat center fixed;
       
-    border-width: 5px;
+    border-width: 0px;
     border-style: solid;
-    border-radius: 50px;
+    border-radius: 10px;
     border-color: rgb(255, 255, 255);
 }
 .myWeek8{
   margin: auto;
   max-width: 800px;
-  background-color: rgb(59, 107, 138);
+  background: linear-gradient(#1f6064, #666666) no-repeat center fixed;
 
     
-  border-width: 5px;
+  border-width: 0px;
   border-style: solid;
-  border-radius: 50px;
+  border-radius: 10px;
   border-color: rgb(255, 255, 255);
 }
 .myWeek9{
   margin: auto;
   max-width: 800px;
-  background-color: rgb(95, 149, 183);
+  background: linear-gradient(#1f7478, #a3a3a3) no-repeat center fixed;
 
     
-  border-width: 5px;
+  border-width: 0px;
   border-style: solid;
-  border-radius: 50px;
+  border-radius: 10px;
   border-color: rgb(255, 255, 255);
 }
 .myWeek10{
   margin: auto;
   max-width: 800px;
-  background-color: rgb(117, 190, 236);
+  background: linear-gradient(#1f99a0, #bdbdbd) no-repeat center fixed;
 
     
-  border-width: 5px;
+  border-width: 0px;
   border-style: solid;
-  border-radius: 50px;
+  border-radius: 10px;
   border-color: rgb(255, 255, 255);
 }
-/* Set the apperance of the class, chart */
+
+/* Appearance of Charts */
 .chart{
     background-color: white;
     width:372px;
@@ -254,7 +275,7 @@ h1, h3, p{
     margin: auto; 
 }
 
-/* Set the apperance for a particular chart */
+/*Change width of certain charts so they fit all screen sizes*/
 #chart3{
     width: 350px;
 }

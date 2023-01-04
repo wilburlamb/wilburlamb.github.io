@@ -16,10 +16,37 @@
     "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/POINTS.csv",
     "format": {"type": "csv"}
   },
-
+    "transform": [
+    {"filter": "datum.PTS>=minPoints"},
+    {"filter": "datum.PTS<=maxPoints"},
+    {"filter": "datum.W>=minWins"},
+    {"filter": "datum.W<=maxWins"}
+  ],
   "height": 310,
   "width": 280,
   "config": {"background": "#ffffff", "view": {"stroke": "transparent"}},
+   "params": [
+    {
+      "name": "minPoints",
+      "value": 0,
+      "bind": {"input": "range", "min": 0, "max": 240, "step": 1}
+    },
+    {
+      "name": "maxPoints",
+      "value": 250,
+      "bind": {"input": "range", "min": 0, "max": 250, "step": 1}
+    },
+    {
+      "name": "minWins",
+      "value": 0,
+      "bind": {"input": "range", "min": 0, "max": 70, "step": 1}
+    },
+    {
+      "name": "maxWins",
+      "value": 80,
+      "bind": {"input": "range", "min": 0, "max": 80, "step": 1}
+    }
+  ],
   "layer": [
     {
       "mark": {"type": "circle", "point": false, "interpolate": "monotone"},

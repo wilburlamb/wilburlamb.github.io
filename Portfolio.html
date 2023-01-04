@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
+<!--Head-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,58 +12,57 @@
 
     <link rel="stylesheet" href="Portfolio.css">
 
+  </style>
+<!--Vega Embed Charts-->
     <script src="https://cdn.jsdelivr.net/npm/vega"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed"></script>
 </head>
 
-
-
+<!--Body-->
 <body>
+<!--Title-->
+    <h2>Portfolio</h2> 
+    <div class="wrap">       
     
-    <div class="wrap">    
-
-        <h1>Portfolio</h1>    
-    
-        <p>Welcome to my portfolio page for Data Science 2022</p>
+        <p>By Wilbur Lamb</p>
     </div>
-
+<!--Links-->
     <div class = "links">   
         <a href="index.html" class="link" id="link2">Home</a>
         <a href="Project.html" class="link" id="link1">Project</a>
-        <a href="About.html" class= "link" id="link3">About</a>
         <a href="https://github.com/wilburlamb/wilburlamb.github.io" class= "link" id="link4">GitHub</a>
     </div>
-   
+<!--Homework 1 - I have embeded two charts from the Daca Science GitHub-->
     <div class="myWeek1">
-        <h1>Premier League Football Data - Week 1</h1>
+        <h1>COVID - Embedding - Week 1</h1>
         
-        <h3>Does the home advantage really exist?</h3>
+        <h3>COVID - UK Cases</h3>
         <div class = 'grid_items'>
-        <p>A chart illustrating the accumulation of home and away goals across the 2021/22 Premeir League season</p>
+        <p>A line chart illustrating the rolling rate of new cases of Covid in each country within the United Kingdom.</p>
         <div class="grid_item" id="chart1"></div>
         </div>
-        <h3>Home Goals - 6 Premier League Sides</h3>
+        <h3>Covid - English Regions</h3>
         <div class = 'grid_items'>
-        <p>A trellis chart depicting the amount of home goals scored by 6 sides in the Premier League in the 2020/21 season</p>
+        <p>An area chart illustrating the COVID infection rate per 100k in each region of England.</p>
         <div class="grid_item" id="chart2"> </div>
         </div>
     </div> 
-
+<!--Homework 2 - I have recreated the IMF chart and improved it taking figures as a percetnage of global GDP-->
     <div class="myWeek2">
-        <h1>IMF Findings - Week 2</h1>
+        <h1>IMF - Correcting - Week 2</h1>
 
         <div class = 'grid_items'>   
         <p>Original chart - released by the IMF, showing the outstanding credit of all their members.</p>
         <div class="grid_item" id="chart3"></div>
-        <p>Corrected chart - showing the outstanding credit of all IMF members as a percentage of Global GDP</p>
+        <p>Corrected chart - showing the outstanding credit of all IMF members as a percentage of Global GDP.</p>
         <div class="grid_item" id="chart4"></div>
         </div>
         <h3>Analysis</h3>
         <p>1984 would have been the most risky year because IMF lending represented the highest proportion of global GDP during this period.
         </p>
     </div> 
-    
+ <!--Homework 3 - I have used inline data in json form to create a chart on Trade as a percentage of GDP-->   
     <div class="myWeek3">
         <h1>Trade - Inline Data - Week 3</h1>
         
@@ -76,7 +75,7 @@
         <p> No vertical gridlines, colour scheme change, interactive slider, and movement of ledgend, all contribute to the second chart being more readable and attractive.
         </p>
     </div> 
-
+<!--Homework 4 - I have created a stacked bar chart from scraped data-->
     <div class="myWeek4">
         <h1>Football Transfers - Scraping - Week 4</h1>
         
@@ -93,7 +92,7 @@
         </p>
 
     </div> 
-
+<!--Homework 5 - I have created a dashboard of 9 charts using ONS API data-->
     <div class="myWeek5">
         <h1>Taxes - UK Dashboard - Week 5</h1>
         <div class = 'grid_items'>
@@ -107,6 +106,7 @@
     <div class="myWeek6">
         <h1>Reading Week - Week 6</h1>
     </div>
+<!--Homework 6 - I have created a clorphleth map of Asian population - unfortunatley the topojson inclused a small part of Russia on the otherside of the globe, making the map very small-->
     <div class="myWeek7">
         <h1>Asia - Maps - Week 7</h1>
         <div class = 'grid_items'>
@@ -117,12 +117,12 @@
         <p> My cloropleth map shows the population of different Asian countries - the darker the shade the greater the population of the country. 
         </p>
     </div> 
-
+<!--Homework 7 - I have created two line charts of Crypto prices, to argue there was a Crypto bubble in 2021-22-->
     <div class="myWeek8">
         <h1>Crypto Bubble - Festival of Economics - Week 8</h1>
 
         <h3>Is Crypto a bubble? Has the bubble popped?</h3>
-        <p> Arguement: There was a bubble in the crypto market in 2021, which has now burst.
+        <p> Arguement: There was a bubble in the crypto market in 2021, which burst in 2022.
         <div class = 'grid_items'>
         <h3>Bitcoin</h3>
         <div class="grid_item" id="chart19"></div>
@@ -134,22 +134,29 @@
         </p>
     </div> 
 
-    
+<!--Homework 8 - I have created two advanced charts, one of which is included in my project-->  
     <div class="myWeek9">
         <h1>Bubble and Regression - Advanced Charts - Week 9</h1>
         <div class = 'grid_items'>
         <div class="grid_item" id="chart21"></div>
         <a href="https://colab.research.google.com/drive/1OJseqKv1trEnmstIJ5LJ40N5ln6ZHsRE" class="link" id="link5">Colab 3  </a>  
         <div class="grid_item" id="chart22"></div>
-        <a href="https://colab.research.google.com/drive/1mOMeloKNPTBcCbUxVlxQ3vi5EiEXvEfR#scrollTo=WVboyJy9EdPZ" class="link" id="link5">Colab 4  </a>
+        <a href="https://colab.research.google.com/drive/1mOMeloKNPTBcCbUxVlxQ3vi5EiEXvEfR#scrollTo=WVboyJy9EdPZ" class="link" id="link6">Colab 4  </a>
         </div>
     </div>
 
+<!--Homework 9 - I have struggled with this homework, I have linked some colab files as evidence of my attempts-->
     <div class="myWeek10">
             <h1>Machine Learning - Week 10/11</h1>
             <div class = 'grid_items'>
             <div class="grid_item" id="chart23"></div>
-
+            </div>
+            <div class = 'grid_items'>
+            <a href="https://colab.research.google.com/drive/1OOSrLj6sYN4fGe6L6zYiAtwSp6INxLdN" class="link" id="link7">Colab 5  </a>
+            <a href="https://colab.research.google.com/drive/1B9U6iZ7NOu_4-yhuOxKiPPMXQVHBBnRU#scrollTo=E_NXc66EuUln" class="link" id="link8">Colab 6  </a>
+            <a href="https://colab.research.google.com/drive/1WDcHsYcpxmHGYf22b5Lj2assyxCa-h09" class="link" id="link9">Colab 7  </a>
+            <a href="https://colab.research.google.com/drive/1mOMeloKNPTBcCbUxVlxQ3vi5EiEXvEfR" class="link" id="link10">Colab 8  </a>  
+            </div>  
         </div>
     </div>
 </body>
@@ -157,9 +164,9 @@
 
 <script>
 
-    //Define charts:
-    var myChart1 = "chartFootball1.json";
-    var myChart2 = "chartFootball2.json";
+    //Charts - defining which json files to embed:
+    var myChart1 = "covid1.json";
+    var myChart2 = "covid2.json";
     var myChart3 = "IMF.json";
     var myChart4 = "IMF2.json";
     var myChart5 = "TradeLine.json";
@@ -182,7 +189,7 @@
     var myChart22 = "Regressaddyybud.json";
     var myChart23 = "sponsornorm.json";
 
-    // Embed charts:
+    //Charts - embedding the charts via Vega embed:
     vegaEmbed('#chart1', myChart1);
     vegaEmbed('#chart2', myChart2);
     vegaEmbed('#chart3', myChart3);
