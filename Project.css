@@ -40,6 +40,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 20px
 }
 a{
     border: 5px;
@@ -59,23 +60,53 @@ a{
 }
 
 /*Fonts*/
-h3, p{
+h3{
     color:rgb(255, 255, 255);
     font-family: "Open Sans", sans-serif;
     text-align: center;
+    padding-bottom:10px;
+    padding-top: 20px
+}
+
+p{
+  color:rgb(255, 255, 255);
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px
 }
 
 h2{
   color:rgb(255, 255, 255);
   font-family: "Montserrat";
   text-align: center;
-  font-size: 50px
+  font-size: 50px;
+}
+
+h5{
+  color:rgb(255, 255, 255);
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 17px
+
 }
 
 h1{
   color:rgb(255, 255, 255);
   font-family: "Montserrat";
   text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px
+}
+
+h4{
+  color:rgba(255, 255, 255, 0.738);
+  font-family: "Montserrat";
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 10px
 }
 
 /*Chart Appearance*/
@@ -104,6 +135,7 @@ h1{
 }
 .grid_items {
     padding: 2px;
+    padding-left: 30px;
     display: grid;
     grid-template-columns: 100%;
     max-width: 800px; 
@@ -125,6 +157,8 @@ h1{
   .grid_items > div:nth-child(3n) {
     background-color: #ffffff;
   }
+
+/* Different number of collumns for differnt size screens - mobile compatibility*/
 
 /* One column*/
 @media only screen and (min-width: 250px) {
@@ -174,6 +208,16 @@ h1{
   }
 
 /*Containers for the different sections of my project*/
+.section0{
+  margin: auto;
+  max-width: 800px;
+  background: linear-gradient(#8e8b09, #000000) no-repeat center fixed;
+    
+  border-width: 0px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: rgb(255, 255, 255);
+}
 .section1{
   margin: auto;
   max-width: 800px;

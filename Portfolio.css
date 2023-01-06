@@ -40,6 +40,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 20px
 }
 a{
     border: 5px;
@@ -59,11 +60,31 @@ a{
 }
 
 /*Font*/
-h3, p{
+h3{
+color:rgb(255, 255, 255);
+font-family: "Open Sans", sans-serif;
+text-align: center;
+padding-bottom:10px
+}
+
+p{
     color:rgb(255, 255, 255);
     font-family: "Open Sans", sans-serif;
     text-align: center;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px
 }
+
+h5{
+  color:rgb(255, 255, 255);
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 17px
+
+}
+
 
 h2{
   color:rgb(255, 255, 255);
@@ -76,22 +97,26 @@ h1{
   color:rgb(255, 255, 255);
   font-family: "Montserrat";
   text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px
 }
 /*Grids - All charts in grids, different collumn number for different size screen*/
 .grid_items {
-  padding: 2px;
+  padding-bottom: 40px;
+  padding-left: 30px;
   display: grid;
   grid-template-columns: 100%;
   max-width: 800px; 
   margin: 0 auto 0 auto !important;
+  align-items: center;
   padding: 0 5 0 5; 
-  grid-column-gap: 5px;
+  grid-column-gap: 10px;
   grid-row-gap: 20px;
 }
 .grid_items > div {
   background-color: #ffffff;
-  padding: 5px;
-  border-radius: 10px;
+  padding: 0px;
+  border-radius: 6px;
   width: 360px;
   margin:auto;
 }
@@ -101,6 +126,8 @@ h1{
 .grid_items > div:nth-child(3n) {
   background-color: #ffffff;
 }
+
+/* Different number of collumns for differnt size screens - mobile compatibility*/
 
 /* One column*/
 @media only screen and (min-width: 250px) {
@@ -275,7 +302,8 @@ h1{
     margin: auto; 
 }
 
-/*Change width of certain charts so they fit all screen sizes*/
+/*Change width of certain charts so they fit all screen sizes - mobile compatibility*/
+
 #chart3{
     width: 350px;
 }

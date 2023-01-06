@@ -58,10 +58,16 @@ a{
 }
 
 /*Font*/
-h3, p{
+h3{
     color:rgb(255, 255, 255);
     font-family: "Open Sans", sans-serif;
     text-align: center;
+}
+ p{
+    color:rgb(255, 255, 255);
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    padding-bottom: 40px
 }
 
 h1{

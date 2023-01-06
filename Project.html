@@ -11,7 +11,7 @@
 <!--Link to CSS Stylesheet-->
     <link rel="stylesheet" href="Project.css">
 
-<!--Vega Embed Charts-->
+<!--Vega Embed Charts - old versions otherwise chart 3 and 4 crash-->
     <script src="https://cdn.jsdelivr.net/npm/vega"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed"></script>
@@ -21,8 +21,7 @@
     <div class="wrap">    
 <!--Title-->
         <h2>Project - World Cup Economics</h2>    
-    
-        <p>By Wilbur Lamb</p>
+        <h5>By Wilbur Lamb</h5>
     </div>
 <!--Links-->
     <div class = "links">   
@@ -33,7 +32,10 @@
 <!--Aims Section-->
     <div class="section1">
     <h1>Aims</h1>
-    <p>The aim of this project is to assess the micro and macroeconomic costs and benefits of hosting, sponsoring, and participating in, the FIFA World Cup. With over half of the world's population expected to tune in to the 2022 edition of the tournament, the economic outcomes of such a global spectacle are widespread. Ultimately, I hope to conclude whether hosting, sponsoring, and participating in the World Cup are viable strategies for the economic improvement of nations and firms. </p>
+    <p>The aim of this project is to assess the micro and macroeconomic costs and benefits of hosting, sponsoring, and participating in, the FIFA World Cup. </p>
+        <p>   With over half of the world's population having tuned in to the 2022 edition of the tournament, the economic outcomes of such a global spectacle are widespread. </p>
+            <p>   Ultimately, I hope to conclude whether hosting, sponsoring, and participating in the World Cup are viable strategies for the economic improvement of nations and firms. </p>
+            <p> </p>
     </div>
 
 <!--Data Section-->
@@ -49,6 +51,7 @@
         
     <p> Importantly, because my focus is on historic World Cups I have avoided the use of APIs. I also found that storing my data in GitHub avoided the chance of charts crashing. Moreover, I struggled to find APIs with data relating to the World Cup. 
                     </p> 
+                    <p> </p>
                 </div>
     <!--Hosting Section-->
     <div class="section3">
@@ -60,10 +63,14 @@
         <div class="grid_item" id="chart2"></div>
         <a href="https://colab.research.google.com/drive/1cfcBTWysGacZJ67ALikcaSnk7Qzo1DTm#scrollTo=l24kFC7vZ64S" class="link" id="link4">Colab 1  </a>
         </div>
-        
-        <h1>Hosting - Benefits </h1>
-        <h3></h3>
+        <h4>Files Used:</h4>
+        <h4>WORLDCUPCOSTSANDGDPNOQAT.csv</h4>
+        <h4>WORLDCUPCOSTSANDGDPINCQAT.csv</h4>
+        <h4>WORLDCUPCOSTS (1).csv</h4>
+        <h4>project_costlayer.json</h4>
+        <h4>project_costlayerQ.json</h4>
 
+        <h1>Hosting - Benefits </h1>
         <div class = 'grid_items'>
          <!--Chart 3 -->
         <div class="grid_item" id="chart3"></div>
@@ -72,6 +79,17 @@
         <a href="https://colab.research.google.com/drive/1OaxpGMqydQEi5X9GGTj_pmjgjMINjfaI" class="link" id="link5">Colab 2  </a>
         <a href="https://colab.research.google.com/drive/1ESiMFn0dTTTZ_syuB8WRkJU8O8UCPKHC" class="link" id="link6">Colab 3  </a>
         </div>
+        <h4>Files Used:</h4>
+        <h4>GERMANYRANKINDEX.csv</h4>
+        <h4>SOUTHAFRICARANKINDEX.csv</h4>
+        <h4>BRAZILRANKINDEX.csv</h4>
+        <h4>RUSSIARANKINDEX.csv</h4>
+        <h4>FIFARANKING (1).csv</h4>
+        <h4>FIFARANK4.csv</h4>
+        <h4>project_fifarank.json</h4>
+        <h4>TOURISMINDEXWC.csv</h4>
+        <h4>TOURISM.csv</h4>
+        <h4>project_tourism.json</h4>
         <!--Hosting Conclusions-->
         <h3>Hosting - Conclusions</h3>
         <p>My first two charts show that the cost of hosting the World Cup is rising, both in nominal terms and relative to GDP. This means that nations putting in bids to host must consider the cost to the taxpayer now more than ever. Furthermore, my second chart, including Qatar 2022, shows how unprecedented government spending on this year's tournament has been. Only when the cost of the 2026 World Cup has been announced will we know whether this is an anomaly or a new trend, I expect the former.  </p>
@@ -88,6 +106,7 @@
             
                         <p>   Overall, I conclude that, regarding Qatar as an anomaly, the on and off pitch benefits of hosting the tournament outweigh the costs, making hosting a viable economic endeavour. 
              </p>
+             <p> </p>
             </div>
         <!--Sponsoring Section-->
         <div class="section4">
@@ -99,6 +118,11 @@
         <div class="grid_item" id="chart7"></div>
         <a href="https://colab.research.google.com/drive/1mOMeloKNPTBcCbUxVlxQ3vi5EiEXvEfR#scrollTo=WVboyJy9EdPZ" class="link" id="link7">Colab 4  </a>
         </div>
+        <h4>Files Used:</h4>
+        <h4>LONGTERMSPONSORSTOCKSNORM.csv</h4>
+        <h4>project_sponsornorm.json</h4>
+        <h4>LONGTERMSPONSORSTOCKS.csv</h4>
+        <h4>project_regressaddyybud.json</h4>
         <!--Sponsoring Conclusions -->
         <h3>Sponsoring - Conclusions</h3>
         <p> To assess the microeconomic impact of sponsoring the World Cup, I have selected four publicly limited sponsors with World Cup partnerships of at least 20 years - Coca Cola, McDonalds, Budweiser, and Adidas. </p>
@@ -106,7 +130,7 @@
             <p>   The behaviour of their stock prices have had little in common throughout this World Cup year. Bivariate regressions performed on pairings of these stocks resulted in no evidence of linear relationships, aside from the regression of Adidas on Budweiser illustrated in my second chart. The results of this regression were statistically significant, but as this was the only pairing of stocks exhibiting a correlation, it cannot be concluded that the World Cup was the reason for this. </p>
             
                 <p>   However, there is evidence of stock prices behaving similarly in the month before the tournament. My chart using hierarchical time-series clustering illustrates all four company's stock prices rising dramatically during October. Therefore, I conclude that there is a positive influence on stock market success for World Cup sponsors in the short term. </p>
-            
+                <p> </p>
             </div>
          <!--Participating and Winning Section-->
             <div class="section5">
@@ -119,12 +143,21 @@
         <a href="https://colab.research.google.com/drive/1btt7nkkMYKiOAsdddz58xyqZ7C3roplV" class="link" id="link8">Colab 5  </a>
         <a href="https://colab.research.google.com/drive/1XF2Qfk6MgTIXaXCQYRDyeVoOvGWFmbF-" class="link" id="link8">Colab 6  </a>
         </div>
+        <h4>Files Used:</h4>
+        <h4>PRIZE2.csv</h4>
+        <h4>PRIZE2.html</h4>
+        <h4>project_prize.json</h4>
+        <h4>POINTS.csv</h4>
+        <h4>GDPPC.csv</h4>
+        <h4>POINTS.html</h4>
+        <h4>project_gdpwc.json</h4>
         <!--Participating and Winning Conclusions-->
         <h3>Participaiting and Winning - Conclusions</h3>
         <p>My first chart shows the almost exponential growth in the World Cup prize fund, from its introduction in 1982, to the present day. With the total prize fund, as well as the rewards for winning and participating, having increased dramatically over the years, the incentive for nations to qualify for the tournament is greater than ever before. </p>
 
             <p> Moreover, as my second chart illustrates, there is little relationship between World Cup success and GDP per capita. This means the incentive for poorer nations to invest in their World Cup campaigns is certainly worthwhile. The combination of larger prizes for qualified nations, as well as the possibility of success even for less wealthy countries, makes the economic benefits of participating and winning huge. 
             </p>
+            <p> </p>
         </div>
 
 </body>
