@@ -39,6 +39,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 20px
 }
 a{
     border: 5px;
@@ -67,7 +68,8 @@ h3{
     color:rgb(255, 255, 255);
     font-family: "Open Sans", sans-serif;
     text-align: center;
-    padding-bottom: 40px
+    padding-bottom: 55px;
+    font-size: 17px
 }
 
 h1{

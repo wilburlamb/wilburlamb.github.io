@@ -134,8 +134,6 @@ h4{
   border-color: rgb(113, 141, 58);
 }
 .grid_items {
-    padding: 2px;
-    padding-left: 30px;
     display: grid;
     grid-template-columns: 100%;
     max-width: 800px; 

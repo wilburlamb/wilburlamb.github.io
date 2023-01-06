@@ -103,7 +103,6 @@ h1{
 /*Grids - All charts in grids, different collumn number for different size screen*/
 .grid_items {
   padding-bottom: 40px;
-  padding-left: 30px;
   display: grid;
   grid-template-columns: 100%;
   max-width: 800px; 
