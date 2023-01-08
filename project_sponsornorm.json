@@ -1,47 +1,48 @@
-
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-     
-       "title": {
-        "text": "World Cup Sponsor Stocks",
-        "subtitle": ["Prices of FIFA World Cup sponsor's stocks clustered", "Coca-Cola (red), Adidas (black), Budweiser (yellow), 'McDonald's (green)",
-        "Source: Yahoo Finance"],
-        "subtitleFontStyle":"italic",
-        "subtitleFontSize":10,
-        "anchor": "start",
-        "color": "black"},
-    
-      "data": {
-      "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/LONGTERMSPONSORSTOCKSNORM.csv"
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "title": {
+      "text": "World Cup Sponsor Stocks",
+      "subtitle": ["Prices of FIFA World Cup sponsor's stocks clustered","Source: Yahoo Finance"],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
     },
-    
-    "repeat": {"layer": ["KO_z", "ADDY", "BUD_", "MCD_"]},
-   
-    "spec": {
-        
-        "height": 280,
-        "width": 280,
- 
-        "mark": {
-            "type":"line",
-            "strokeWidth":2},    
-  
-        "encoding": {
-            "x": {
-                "field": "Date",
-                "type": "temporal"},
-    
-            "y": {
-                "field": {"repeat": "layer"},
-                "type": "quantitative",
-                "title": null},
-    
-            "color": {
-                "datum": {"repeat": "layer"},
-                "scale": {"range": ["red", "black", "orange", "green"]},
-                "legend": null
-          }
-      
-          } 
+    "data": {
+      "url": "https://raw.githubusercontent.com/wilburlamb/wilburlamb.github.io/main/SPONSORSTOCKSNORMLONG.csv",
+      "format": {"type": "csv"}
+    },
+    "height": 300,
+    "width": 300,
+    "mark": {"type": "line", "width": 10},
+    "selection": {
+      "Region": {
+        "type": "single",
+        "fields": ["Sponsor"],
+        "bind": {
+          "input": "select",
+          "options": [null, "Adidas", "Budweiser", "Coca-Cola", "McDonalds"],
+          "name": "Pick a Sponsor: "
+        }
       }
+    },
+    "transform": [
+      {"filter": {"selection": "Region"}}
+    ],
+    "encoding": {
+      "x": {"field": "Date", "type": "temporal", "title": null},
+      "y": {
+        "field": "Value",
+        "type": "quantitative",
+        "scale": {"domain": [-3, 2.5]},
+        "title": null
+      },
+      "color": {
+        "field": "Sponsor",
+        "type": "nominal",
+        "title": "Sponsor",
+        "legend": {"orient": "bottom"},
+        "scale": {"range": ["red", "black", "orange", "green"]}
+      }
+    }
   }
