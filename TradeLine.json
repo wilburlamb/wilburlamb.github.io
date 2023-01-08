@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
   "title": {
-    "text": "Trade as a percentage of GDP",
+    "text": "Trade as a percentage of GDP (original)",
     "subtitle":"Source: World Bank",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
